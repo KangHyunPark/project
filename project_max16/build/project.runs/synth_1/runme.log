@@ -1,0 +1,710 @@
+
+*** Running vivado
+    with args -log top.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source top.tcl
+
+
+
+****** Vivado v2021.1 (64-bit)
+  **** SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
+  **** IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+    ** Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+
+source top.tcl -notrace
+Command: synth_design -top top -part xc7a200tsbg484-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a200t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a200t'
+INFO: [Device 21-403] Loading part xc7a200tsbg484-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 23576
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1135.965 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'top' [C:/Users/catch/Desktop/project_max16/project.srcs/sources_1/new/top.v:2]
+INFO: [Synth 8-6157] synthesizing module 'max_module32' [C:/Users/catch/Desktop/project_max16/project.srcs/sources_1/new/max_module32.v:2]
+	Parameter DATA_WIDTH bound to: 8 - type: integer 
+	Parameter bank bound to: 32 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'max_operator' [C:/Users/catch/Desktop/project_max16/project.srcs/sources_1/new/max_operator.v:2]
+	Parameter DATA_WIDTH bound to: 8 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'max_operator' (1#1) [C:/Users/catch/Desktop/project_max16/project.srcs/sources_1/new/max_operator.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'max_module32' (2#1) [C:/Users/catch/Desktop/project_max16/project.srcs/sources_1/new/max_module32.v:2]
+INFO: [Synth 8-6157] synthesizing module 'controller' [C:/Users/catch/Desktop/project_max16/project.srcs/sources_1/new/controller.v:3]
+	Parameter global_buf_addr_width bound to: 17 - type: integer 
+	Parameter bank bound to: 32 - type: integer 
+	Parameter log_bank bound to: 5 - type: integer 
+	Parameter microaddr_width bound to: 5 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'controller' (3#1) [C:/Users/catch/Desktop/project_max16/project.srcs/sources_1/new/controller.v:3]
+INFO: [Synth 8-6157] synthesizing module 'systolic_controller' [C:/Users/catch/Desktop/project_max16/project.srcs/sources_1/new/systolic_controller.v:3]
+	Parameter PE_ROW bound to: 16 - type: integer 
+	Parameter global_buf_addr_width bound to: 17 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'systolic_controller' (4#1) [C:/Users/catch/Desktop/project_max16/project.srcs/sources_1/new/systolic_controller.v:3]
+INFO: [Synth 8-6157] synthesizing module 'systolic' [C:/Users/catch/Desktop/project_max16/project.srcs/sources_1/new/systolic.v:3]
+	Parameter PE_ROW bound to: 16 - type: integer 
+	Parameter PE_COL bound to: 16 - type: integer 
+	Parameter INPUT_DATA_WIDTH bound to: 8 - type: integer 
+	Parameter WEIGHT_DATA_WIDTH bound to: 8 - type: integer 
+	Parameter OUTPUT_DATA_WIDTH bound to: 24 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'systolic_row' [C:/Users/catch/Desktop/project_max16/project.srcs/sources_1/new/systolic_row.v:3]
+	Parameter PE_NUM bound to: 16 - type: integer 
+	Parameter INPUT_DATA_WIDTH bound to: 8 - type: integer 
+	Parameter WEIGHT_DATA_WIDTH bound to: 8 - type: integer 
+	Parameter OUTPUT_DATA_WIDTH bound to: 24 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'PE' [C:/Users/catch/Desktop/project_max16/project.srcs/sources_1/new/PE.v:3]
+	Parameter INPUT_DATA_WIDTH bound to: 8 - type: integer 
+	Parameter WEIGHT_DATA_WIDTH bound to: 8 - type: integer 
+	Parameter OUTPUT_DATA_WIDTH bound to: 24 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'PE' (5#1) [C:/Users/catch/Desktop/project_max16/project.srcs/sources_1/new/PE.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'systolic_row' (6#1) [C:/Users/catch/Desktop/project_max16/project.srcs/sources_1/new/systolic_row.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'systolic' (7#1) [C:/Users/catch/Desktop/project_max16/project.srcs/sources_1/new/systolic.v:3]
+INFO: [Synth 8-6157] synthesizing module 'systolic_input_buffer' [C:/Users/catch/Desktop/project_max16/project.srcs/sources_1/new/systolic_input_buffer.v:2]
+	Parameter DATA_WIDTH bound to: 8 - type: integer 
+	Parameter length bound to: 16 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'shift_register' [C:/Users/catch/Desktop/project_max16/project.srcs/sources_1/new/shift_register.v:2]
+	Parameter DATA_WIDTH bound to: 8 - type: integer 
+	Parameter length bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'shift_register' (8#1) [C:/Users/catch/Desktop/project_max16/project.srcs/sources_1/new/shift_register.v:2]
+INFO: [Synth 8-6157] synthesizing module 'shift_register__parameterized0' [C:/Users/catch/Desktop/project_max16/project.srcs/sources_1/new/shift_register.v:2]
+	Parameter DATA_WIDTH bound to: 8 - type: integer 
+	Parameter length bound to: 2 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'shift_register__parameterized0' (8#1) [C:/Users/catch/Desktop/project_max16/project.srcs/sources_1/new/shift_register.v:2]
+INFO: [Synth 8-6157] synthesizing module 'shift_register__parameterized1' [C:/Users/catch/Desktop/project_max16/project.srcs/sources_1/new/shift_register.v:2]
+	Parameter DATA_WIDTH bound to: 8 - type: integer 
+	Parameter length bound to: 3 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'shift_register__parameterized1' (8#1) [C:/Users/catch/Desktop/project_max16/project.srcs/sources_1/new/shift_register.v:2]
+INFO: [Synth 8-6157] synthesizing module 'shift_register__parameterized2' [C:/Users/catch/Desktop/project_max16/project.srcs/sources_1/new/shift_register.v:2]
+	Parameter DATA_WIDTH bound to: 8 - type: integer 
+	Parameter length bound to: 4 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'shift_register__parameterized2' (8#1) [C:/Users/catch/Desktop/project_max16/project.srcs/sources_1/new/shift_register.v:2]
+INFO: [Synth 8-6157] synthesizing module 'shift_register__parameterized3' [C:/Users/catch/Desktop/project_max16/project.srcs/sources_1/new/shift_register.v:2]
+	Parameter DATA_WIDTH bound to: 8 - type: integer 
+	Parameter length bound to: 5 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'shift_register__parameterized3' (8#1) [C:/Users/catch/Desktop/project_max16/project.srcs/sources_1/new/shift_register.v:2]
+INFO: [Synth 8-6157] synthesizing module 'shift_register__parameterized4' [C:/Users/catch/Desktop/project_max16/project.srcs/sources_1/new/shift_register.v:2]
+	Parameter DATA_WIDTH bound to: 8 - type: integer 
+	Parameter length bound to: 6 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'shift_register__parameterized4' (8#1) [C:/Users/catch/Desktop/project_max16/project.srcs/sources_1/new/shift_register.v:2]
+INFO: [Synth 8-6157] synthesizing module 'shift_register__parameterized5' [C:/Users/catch/Desktop/project_max16/project.srcs/sources_1/new/shift_register.v:2]
+	Parameter DATA_WIDTH bound to: 8 - type: integer 
+	Parameter length bound to: 7 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'shift_register__parameterized5' (8#1) [C:/Users/catch/Desktop/project_max16/project.srcs/sources_1/new/shift_register.v:2]
+INFO: [Synth 8-6157] synthesizing module 'shift_register__parameterized6' [C:/Users/catch/Desktop/project_max16/project.srcs/sources_1/new/shift_register.v:2]
+	Parameter DATA_WIDTH bound to: 8 - type: integer 
+	Parameter length bound to: 8 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'shift_register__parameterized6' (8#1) [C:/Users/catch/Desktop/project_max16/project.srcs/sources_1/new/shift_register.v:2]
+INFO: [Synth 8-6157] synthesizing module 'shift_register__parameterized7' [C:/Users/catch/Desktop/project_max16/project.srcs/sources_1/new/shift_register.v:2]
+	Parameter DATA_WIDTH bound to: 8 - type: integer 
+	Parameter length bound to: 9 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'shift_register__parameterized7' (8#1) [C:/Users/catch/Desktop/project_max16/project.srcs/sources_1/new/shift_register.v:2]
+INFO: [Synth 8-6157] synthesizing module 'shift_register__parameterized8' [C:/Users/catch/Desktop/project_max16/project.srcs/sources_1/new/shift_register.v:2]
+	Parameter DATA_WIDTH bound to: 8 - type: integer 
+	Parameter length bound to: 10 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'shift_register__parameterized8' (8#1) [C:/Users/catch/Desktop/project_max16/project.srcs/sources_1/new/shift_register.v:2]
+INFO: [Synth 8-6157] synthesizing module 'shift_register__parameterized9' [C:/Users/catch/Desktop/project_max16/project.srcs/sources_1/new/shift_register.v:2]
+	Parameter DATA_WIDTH bound to: 8 - type: integer 
+	Parameter length bound to: 11 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'shift_register__parameterized9' (8#1) [C:/Users/catch/Desktop/project_max16/project.srcs/sources_1/new/shift_register.v:2]
+INFO: [Synth 8-6157] synthesizing module 'shift_register__parameterized10' [C:/Users/catch/Desktop/project_max16/project.srcs/sources_1/new/shift_register.v:2]
+	Parameter DATA_WIDTH bound to: 8 - type: integer 
+	Parameter length bound to: 12 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'shift_register__parameterized10' (8#1) [C:/Users/catch/Desktop/project_max16/project.srcs/sources_1/new/shift_register.v:2]
+INFO: [Synth 8-6157] synthesizing module 'shift_register__parameterized11' [C:/Users/catch/Desktop/project_max16/project.srcs/sources_1/new/shift_register.v:2]
+	Parameter DATA_WIDTH bound to: 8 - type: integer 
+	Parameter length bound to: 13 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'shift_register__parameterized11' (8#1) [C:/Users/catch/Desktop/project_max16/project.srcs/sources_1/new/shift_register.v:2]
+INFO: [Synth 8-6157] synthesizing module 'shift_register__parameterized12' [C:/Users/catch/Desktop/project_max16/project.srcs/sources_1/new/shift_register.v:2]
+	Parameter DATA_WIDTH bound to: 8 - type: integer 
+	Parameter length bound to: 14 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'shift_register__parameterized12' (8#1) [C:/Users/catch/Desktop/project_max16/project.srcs/sources_1/new/shift_register.v:2]
+INFO: [Synth 8-6157] synthesizing module 'shift_register__parameterized13' [C:/Users/catch/Desktop/project_max16/project.srcs/sources_1/new/shift_register.v:2]
+	Parameter DATA_WIDTH bound to: 8 - type: integer 
+	Parameter length bound to: 15 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'shift_register__parameterized13' (8#1) [C:/Users/catch/Desktop/project_max16/project.srcs/sources_1/new/shift_register.v:2]
+INFO: [Synth 8-6157] synthesizing module 'shift_register__parameterized14' [C:/Users/catch/Desktop/project_max16/project.srcs/sources_1/new/shift_register.v:2]
+	Parameter DATA_WIDTH bound to: 8 - type: integer 
+	Parameter length bound to: 16 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'shift_register__parameterized14' (8#1) [C:/Users/catch/Desktop/project_max16/project.srcs/sources_1/new/shift_register.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'systolic_input_buffer' (9#1) [C:/Users/catch/Desktop/project_max16/project.srcs/sources_1/new/systolic_input_buffer.v:2]
+INFO: [Synth 8-6157] synthesizing module 'systolic_output_buffer' [C:/Users/catch/Desktop/project_max16/project.srcs/sources_1/new/systolic_output_buffer.v:2]
+	Parameter DATA_WIDTH bound to: 8 - type: integer 
+	Parameter length bound to: 16 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'systolic_output_buffer' (10#1) [C:/Users/catch/Desktop/project_max16/project.srcs/sources_1/new/systolic_output_buffer.v:2]
+INFO: [Synth 8-6157] synthesizing module 'global_buffer' [C:/Users/catch/Desktop/project_max16/project.srcs/sources_1/new/global_buffer.v:2]
+	Parameter addr_width bound to: 17 - type: integer 
+	Parameter data_width bound to: 128 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'input_bram' [C:/Users/catch/Desktop/project_max16/project.runs/synth_1/.Xil/Vivado-12588-KHlaptop/realtime/input_bram_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'input_bram' (11#1) [C:/Users/catch/Desktop/project_max16/project.runs/synth_1/.Xil/Vivado-12588-KHlaptop/realtime/input_bram_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'weight_bram' [C:/Users/catch/Desktop/project_max16/project.runs/synth_1/.Xil/Vivado-12588-KHlaptop/realtime/weight_bram_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'weight_bram' (12#1) [C:/Users/catch/Desktop/project_max16/project.runs/synth_1/.Xil/Vivado-12588-KHlaptop/realtime/weight_bram_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'output_bram' [C:/Users/catch/Desktop/project_max16/project.runs/synth_1/.Xil/Vivado-12588-KHlaptop/realtime/output_bram_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'output_bram' (13#1) [C:/Users/catch/Desktop/project_max16/project.runs/synth_1/.Xil/Vivado-12588-KHlaptop/realtime/output_bram_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'global_buffer' (14#1) [C:/Users/catch/Desktop/project_max16/project.srcs/sources_1/new/global_buffer.v:2]
+INFO: [Synth 8-6157] synthesizing module 'delay_unit' [C:/Users/catch/Desktop/project_max16/project.srcs/sources_1/new/delay_unit.v:3]
+	Parameter DATA_WIDTH bound to: 17 - type: integer 
+	Parameter delay bound to: 34 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'delay_unit' (15#1) [C:/Users/catch/Desktop/project_max16/project.srcs/sources_1/new/delay_unit.v:3]
+INFO: [Synth 8-6157] synthesizing module 'delay_unit__parameterized0' [C:/Users/catch/Desktop/project_max16/project.srcs/sources_1/new/delay_unit.v:3]
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+	Parameter delay bound to: 34 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'delay_unit__parameterized0' (15#1) [C:/Users/catch/Desktop/project_max16/project.srcs/sources_1/new/delay_unit.v:3]
+INFO: [Synth 8-6157] synthesizing module 'NIT_bram' [C:/Users/catch/Desktop/project_max16/project.runs/synth_1/.Xil/Vivado-12588-KHlaptop/realtime/NIT_bram_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'NIT_bram' (16#1) [C:/Users/catch/Desktop/project_max16/project.runs/synth_1/.Xil/Vivado-12588-KHlaptop/realtime/NIT_bram_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'PFT_bram' [C:/Users/catch/Desktop/project_max16/project.srcs/sources_1/new/PFT_bram.v:3]
+INFO: [Synth 8-6157] synthesizing module 'PFT_partial_bram' [C:/Users/catch/Desktop/project_max16/project.runs/synth_1/.Xil/Vivado-12588-KHlaptop/realtime/PFT_partial_bram_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'PFT_partial_bram' (17#1) [C:/Users/catch/Desktop/project_max16/project.runs/synth_1/.Xil/Vivado-12588-KHlaptop/realtime/PFT_partial_bram_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'encoder32x5' [C:/Users/catch/Desktop/project_max16/project.srcs/sources_1/new/encoder32x5.v:3]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/catch/Desktop/project_max16/project.srcs/sources_1/new/encoder32x5.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'encoder32x5' (18#1) [C:/Users/catch/Desktop/project_max16/project.srcs/sources_1/new/encoder32x5.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'PFT_bram' (19#1) [C:/Users/catch/Desktop/project_max16/project.srcs/sources_1/new/PFT_bram.v:3]
+INFO: [Synth 8-6157] synthesizing module 'delay_unit__parameterized1' [C:/Users/catch/Desktop/project_max16/project.srcs/sources_1/new/delay_unit.v:3]
+	Parameter DATA_WIDTH bound to: 10 - type: integer 
+	Parameter delay bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'delay_unit__parameterized1' (19#1) [C:/Users/catch/Desktop/project_max16/project.srcs/sources_1/new/delay_unit.v:3]
+INFO: [Synth 8-6157] synthesizing module 'delay_unit__parameterized2' [C:/Users/catch/Desktop/project_max16/project.srcs/sources_1/new/delay_unit.v:3]
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+	Parameter delay bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'delay_unit__parameterized2' (19#1) [C:/Users/catch/Desktop/project_max16/project.srcs/sources_1/new/delay_unit.v:3]
+INFO: [Synth 8-6157] synthesizing module 'address_generator' [C:/Users/catch/Desktop/project_max16/project.srcs/sources_1/new/address_generator.v:3]
+	Parameter input_width bound to: 330 - type: integer 
+	Parameter bank bound to: 32 - type: integer 
+	Parameter microaddr_width bound to: 5 - type: integer 
+	Parameter NIT_addr_width bound to: 12 - type: integer 
+	Parameter NIT_point_index bound to: 10 - type: integer 
+	Parameter PE_COL bound to: 16 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'microaddr_generator' [C:/Users/catch/Desktop/project_max16/project.srcs/sources_1/new/microaddr_generator.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'microaddr_generator' (20#1) [C:/Users/catch/Desktop/project_max16/project.srcs/sources_1/new/microaddr_generator.v:3]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/catch/Desktop/project_max16/project.srcs/sources_1/new/address_generator.v:60]
+INFO: [Synth 8-6157] synthesizing module 'valid_generator32' [C:/Users/catch/Desktop/project_max16/project.srcs/sources_1/new/valid_generator32.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'valid_generator32' (21#1) [C:/Users/catch/Desktop/project_max16/project.srcs/sources_1/new/valid_generator32.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'address_generator' (22#1) [C:/Users/catch/Desktop/project_max16/project.srcs/sources_1/new/address_generator.v:3]
+INFO: [Synth 8-6157] synthesizing module 'subtract_module32' [C:/Users/catch/Desktop/project_max16/project.srcs/sources_1/new/subtract_module32.v:2]
+	Parameter INPUT_DATA_WIDTH bound to: 8 - type: integer 
+	Parameter PE_ROW bound to: 16 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'subtract_operator' [C:/Users/catch/Desktop/project_max16/project.srcs/sources_1/new/subtract_operator.v:2]
+	Parameter DATA_WIDTH bound to: 8 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'subtract_operator' (23#1) [C:/Users/catch/Desktop/project_max16/project.srcs/sources_1/new/subtract_operator.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'subtract_module32' (24#1) [C:/Users/catch/Desktop/project_max16/project.srcs/sources_1/new/subtract_module32.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'top' (25#1) [C:/Users/catch/Desktop/project_max16/project.srcs/sources_1/new/top.v:2]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1146.879 ; gain = 10.914
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1146.879 ; gain = 10.914
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1146.879 ; gain = 10.914
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.763 . Memory (MB): peak = 1146.879 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/catch/Desktop/project_max16/project.gen/sources_1/ip/output_bram/output_bram/output_bram_in_context.xdc] for cell 'u_global_buffer/u_output_bram'
+Finished Parsing XDC File [c:/Users/catch/Desktop/project_max16/project.gen/sources_1/ip/output_bram/output_bram/output_bram_in_context.xdc] for cell 'u_global_buffer/u_output_bram'
+Parsing XDC File [c:/Users/catch/Desktop/project_max16/project.gen/sources_1/ip/weight_bram/weight_bram/weight_bram_in_context.xdc] for cell 'u_global_buffer/u_weight_bram'
+Finished Parsing XDC File [c:/Users/catch/Desktop/project_max16/project.gen/sources_1/ip/weight_bram/weight_bram/weight_bram_in_context.xdc] for cell 'u_global_buffer/u_weight_bram'
+Parsing XDC File [c:/Users/catch/Desktop/project_max16/project.gen/sources_1/ip/input_bram/input_bram/input_bram_in_context.xdc] for cell 'u_global_buffer/u_input_bram'
+Finished Parsing XDC File [c:/Users/catch/Desktop/project_max16/project.gen/sources_1/ip/input_bram/input_bram/input_bram_in_context.xdc] for cell 'u_global_buffer/u_input_bram'
+Parsing XDC File [c:/Users/catch/Desktop/project_max16/project.gen/sources_1/ip/NIT_bram/NIT_bram/NIT_bram_in_context.xdc] for cell 'u_NIT'
+Finished Parsing XDC File [c:/Users/catch/Desktop/project_max16/project.gen/sources_1/ip/NIT_bram/NIT_bram/NIT_bram_in_context.xdc] for cell 'u_NIT'
+Parsing XDC File [c:/Users/catch/Desktop/project_max16/project.gen/sources_1/ip/PFT_partial_bram/PFT_partial_bram/PFT_partial_bram_in_context.xdc] for cell 'u_PFT/genblk1[0].PFT_bank'
+Finished Parsing XDC File [c:/Users/catch/Desktop/project_max16/project.gen/sources_1/ip/PFT_partial_bram/PFT_partial_bram/PFT_partial_bram_in_context.xdc] for cell 'u_PFT/genblk1[0].PFT_bank'
+Parsing XDC File [c:/Users/catch/Desktop/project_max16/project.gen/sources_1/ip/PFT_partial_bram/PFT_partial_bram/PFT_partial_bram_in_context.xdc] for cell 'u_PFT/genblk1[1].PFT_bank'
+Finished Parsing XDC File [c:/Users/catch/Desktop/project_max16/project.gen/sources_1/ip/PFT_partial_bram/PFT_partial_bram/PFT_partial_bram_in_context.xdc] for cell 'u_PFT/genblk1[1].PFT_bank'
+Parsing XDC File [c:/Users/catch/Desktop/project_max16/project.gen/sources_1/ip/PFT_partial_bram/PFT_partial_bram/PFT_partial_bram_in_context.xdc] for cell 'u_PFT/genblk1[2].PFT_bank'
+Finished Parsing XDC File [c:/Users/catch/Desktop/project_max16/project.gen/sources_1/ip/PFT_partial_bram/PFT_partial_bram/PFT_partial_bram_in_context.xdc] for cell 'u_PFT/genblk1[2].PFT_bank'
+Parsing XDC File [c:/Users/catch/Desktop/project_max16/project.gen/sources_1/ip/PFT_partial_bram/PFT_partial_bram/PFT_partial_bram_in_context.xdc] for cell 'u_PFT/genblk1[3].PFT_bank'
+Finished Parsing XDC File [c:/Users/catch/Desktop/project_max16/project.gen/sources_1/ip/PFT_partial_bram/PFT_partial_bram/PFT_partial_bram_in_context.xdc] for cell 'u_PFT/genblk1[3].PFT_bank'
+Parsing XDC File [c:/Users/catch/Desktop/project_max16/project.gen/sources_1/ip/PFT_partial_bram/PFT_partial_bram/PFT_partial_bram_in_context.xdc] for cell 'u_PFT/genblk1[4].PFT_bank'
+Finished Parsing XDC File [c:/Users/catch/Desktop/project_max16/project.gen/sources_1/ip/PFT_partial_bram/PFT_partial_bram/PFT_partial_bram_in_context.xdc] for cell 'u_PFT/genblk1[4].PFT_bank'
+Parsing XDC File [c:/Users/catch/Desktop/project_max16/project.gen/sources_1/ip/PFT_partial_bram/PFT_partial_bram/PFT_partial_bram_in_context.xdc] for cell 'u_PFT/genblk1[5].PFT_bank'
+Finished Parsing XDC File [c:/Users/catch/Desktop/project_max16/project.gen/sources_1/ip/PFT_partial_bram/PFT_partial_bram/PFT_partial_bram_in_context.xdc] for cell 'u_PFT/genblk1[5].PFT_bank'
+Parsing XDC File [c:/Users/catch/Desktop/project_max16/project.gen/sources_1/ip/PFT_partial_bram/PFT_partial_bram/PFT_partial_bram_in_context.xdc] for cell 'u_PFT/genblk1[6].PFT_bank'
+Finished Parsing XDC File [c:/Users/catch/Desktop/project_max16/project.gen/sources_1/ip/PFT_partial_bram/PFT_partial_bram/PFT_partial_bram_in_context.xdc] for cell 'u_PFT/genblk1[6].PFT_bank'
+Parsing XDC File [c:/Users/catch/Desktop/project_max16/project.gen/sources_1/ip/PFT_partial_bram/PFT_partial_bram/PFT_partial_bram_in_context.xdc] for cell 'u_PFT/genblk1[7].PFT_bank'
+Finished Parsing XDC File [c:/Users/catch/Desktop/project_max16/project.gen/sources_1/ip/PFT_partial_bram/PFT_partial_bram/PFT_partial_bram_in_context.xdc] for cell 'u_PFT/genblk1[7].PFT_bank'
+Parsing XDC File [c:/Users/catch/Desktop/project_max16/project.gen/sources_1/ip/PFT_partial_bram/PFT_partial_bram/PFT_partial_bram_in_context.xdc] for cell 'u_PFT/genblk1[8].PFT_bank'
+Finished Parsing XDC File [c:/Users/catch/Desktop/project_max16/project.gen/sources_1/ip/PFT_partial_bram/PFT_partial_bram/PFT_partial_bram_in_context.xdc] for cell 'u_PFT/genblk1[8].PFT_bank'
+Parsing XDC File [c:/Users/catch/Desktop/project_max16/project.gen/sources_1/ip/PFT_partial_bram/PFT_partial_bram/PFT_partial_bram_in_context.xdc] for cell 'u_PFT/genblk1[9].PFT_bank'
+Finished Parsing XDC File [c:/Users/catch/Desktop/project_max16/project.gen/sources_1/ip/PFT_partial_bram/PFT_partial_bram/PFT_partial_bram_in_context.xdc] for cell 'u_PFT/genblk1[9].PFT_bank'
+Parsing XDC File [c:/Users/catch/Desktop/project_max16/project.gen/sources_1/ip/PFT_partial_bram/PFT_partial_bram/PFT_partial_bram_in_context.xdc] for cell 'u_PFT/genblk1[10].PFT_bank'
+Finished Parsing XDC File [c:/Users/catch/Desktop/project_max16/project.gen/sources_1/ip/PFT_partial_bram/PFT_partial_bram/PFT_partial_bram_in_context.xdc] for cell 'u_PFT/genblk1[10].PFT_bank'
+Parsing XDC File [c:/Users/catch/Desktop/project_max16/project.gen/sources_1/ip/PFT_partial_bram/PFT_partial_bram/PFT_partial_bram_in_context.xdc] for cell 'u_PFT/genblk1[11].PFT_bank'
+Finished Parsing XDC File [c:/Users/catch/Desktop/project_max16/project.gen/sources_1/ip/PFT_partial_bram/PFT_partial_bram/PFT_partial_bram_in_context.xdc] for cell 'u_PFT/genblk1[11].PFT_bank'
+Parsing XDC File [c:/Users/catch/Desktop/project_max16/project.gen/sources_1/ip/PFT_partial_bram/PFT_partial_bram/PFT_partial_bram_in_context.xdc] for cell 'u_PFT/genblk1[12].PFT_bank'
+Finished Parsing XDC File [c:/Users/catch/Desktop/project_max16/project.gen/sources_1/ip/PFT_partial_bram/PFT_partial_bram/PFT_partial_bram_in_context.xdc] for cell 'u_PFT/genblk1[12].PFT_bank'
+Parsing XDC File [c:/Users/catch/Desktop/project_max16/project.gen/sources_1/ip/PFT_partial_bram/PFT_partial_bram/PFT_partial_bram_in_context.xdc] for cell 'u_PFT/genblk1[13].PFT_bank'
+Finished Parsing XDC File [c:/Users/catch/Desktop/project_max16/project.gen/sources_1/ip/PFT_partial_bram/PFT_partial_bram/PFT_partial_bram_in_context.xdc] for cell 'u_PFT/genblk1[13].PFT_bank'
+Parsing XDC File [c:/Users/catch/Desktop/project_max16/project.gen/sources_1/ip/PFT_partial_bram/PFT_partial_bram/PFT_partial_bram_in_context.xdc] for cell 'u_PFT/genblk1[14].PFT_bank'
+Finished Parsing XDC File [c:/Users/catch/Desktop/project_max16/project.gen/sources_1/ip/PFT_partial_bram/PFT_partial_bram/PFT_partial_bram_in_context.xdc] for cell 'u_PFT/genblk1[14].PFT_bank'
+Parsing XDC File [c:/Users/catch/Desktop/project_max16/project.gen/sources_1/ip/PFT_partial_bram/PFT_partial_bram/PFT_partial_bram_in_context.xdc] for cell 'u_PFT/genblk1[15].PFT_bank'
+Finished Parsing XDC File [c:/Users/catch/Desktop/project_max16/project.gen/sources_1/ip/PFT_partial_bram/PFT_partial_bram/PFT_partial_bram_in_context.xdc] for cell 'u_PFT/genblk1[15].PFT_bank'
+Parsing XDC File [c:/Users/catch/Desktop/project_max16/project.gen/sources_1/ip/PFT_partial_bram/PFT_partial_bram/PFT_partial_bram_in_context.xdc] for cell 'u_PFT/genblk1[16].PFT_bank'
+Finished Parsing XDC File [c:/Users/catch/Desktop/project_max16/project.gen/sources_1/ip/PFT_partial_bram/PFT_partial_bram/PFT_partial_bram_in_context.xdc] for cell 'u_PFT/genblk1[16].PFT_bank'
+Parsing XDC File [c:/Users/catch/Desktop/project_max16/project.gen/sources_1/ip/PFT_partial_bram/PFT_partial_bram/PFT_partial_bram_in_context.xdc] for cell 'u_PFT/genblk1[17].PFT_bank'
+Finished Parsing XDC File [c:/Users/catch/Desktop/project_max16/project.gen/sources_1/ip/PFT_partial_bram/PFT_partial_bram/PFT_partial_bram_in_context.xdc] for cell 'u_PFT/genblk1[17].PFT_bank'
+Parsing XDC File [c:/Users/catch/Desktop/project_max16/project.gen/sources_1/ip/PFT_partial_bram/PFT_partial_bram/PFT_partial_bram_in_context.xdc] for cell 'u_PFT/genblk1[18].PFT_bank'
+Finished Parsing XDC File [c:/Users/catch/Desktop/project_max16/project.gen/sources_1/ip/PFT_partial_bram/PFT_partial_bram/PFT_partial_bram_in_context.xdc] for cell 'u_PFT/genblk1[18].PFT_bank'
+Parsing XDC File [c:/Users/catch/Desktop/project_max16/project.gen/sources_1/ip/PFT_partial_bram/PFT_partial_bram/PFT_partial_bram_in_context.xdc] for cell 'u_PFT/genblk1[19].PFT_bank'
+Finished Parsing XDC File [c:/Users/catch/Desktop/project_max16/project.gen/sources_1/ip/PFT_partial_bram/PFT_partial_bram/PFT_partial_bram_in_context.xdc] for cell 'u_PFT/genblk1[19].PFT_bank'
+Parsing XDC File [c:/Users/catch/Desktop/project_max16/project.gen/sources_1/ip/PFT_partial_bram/PFT_partial_bram/PFT_partial_bram_in_context.xdc] for cell 'u_PFT/genblk1[20].PFT_bank'
+Finished Parsing XDC File [c:/Users/catch/Desktop/project_max16/project.gen/sources_1/ip/PFT_partial_bram/PFT_partial_bram/PFT_partial_bram_in_context.xdc] for cell 'u_PFT/genblk1[20].PFT_bank'
+Parsing XDC File [c:/Users/catch/Desktop/project_max16/project.gen/sources_1/ip/PFT_partial_bram/PFT_partial_bram/PFT_partial_bram_in_context.xdc] for cell 'u_PFT/genblk1[21].PFT_bank'
+Finished Parsing XDC File [c:/Users/catch/Desktop/project_max16/project.gen/sources_1/ip/PFT_partial_bram/PFT_partial_bram/PFT_partial_bram_in_context.xdc] for cell 'u_PFT/genblk1[21].PFT_bank'
+Parsing XDC File [c:/Users/catch/Desktop/project_max16/project.gen/sources_1/ip/PFT_partial_bram/PFT_partial_bram/PFT_partial_bram_in_context.xdc] for cell 'u_PFT/genblk1[22].PFT_bank'
+Finished Parsing XDC File [c:/Users/catch/Desktop/project_max16/project.gen/sources_1/ip/PFT_partial_bram/PFT_partial_bram/PFT_partial_bram_in_context.xdc] for cell 'u_PFT/genblk1[22].PFT_bank'
+Parsing XDC File [c:/Users/catch/Desktop/project_max16/project.gen/sources_1/ip/PFT_partial_bram/PFT_partial_bram/PFT_partial_bram_in_context.xdc] for cell 'u_PFT/genblk1[23].PFT_bank'
+Finished Parsing XDC File [c:/Users/catch/Desktop/project_max16/project.gen/sources_1/ip/PFT_partial_bram/PFT_partial_bram/PFT_partial_bram_in_context.xdc] for cell 'u_PFT/genblk1[23].PFT_bank'
+Parsing XDC File [c:/Users/catch/Desktop/project_max16/project.gen/sources_1/ip/PFT_partial_bram/PFT_partial_bram/PFT_partial_bram_in_context.xdc] for cell 'u_PFT/genblk1[24].PFT_bank'
+Finished Parsing XDC File [c:/Users/catch/Desktop/project_max16/project.gen/sources_1/ip/PFT_partial_bram/PFT_partial_bram/PFT_partial_bram_in_context.xdc] for cell 'u_PFT/genblk1[24].PFT_bank'
+Parsing XDC File [c:/Users/catch/Desktop/project_max16/project.gen/sources_1/ip/PFT_partial_bram/PFT_partial_bram/PFT_partial_bram_in_context.xdc] for cell 'u_PFT/genblk1[25].PFT_bank'
+Finished Parsing XDC File [c:/Users/catch/Desktop/project_max16/project.gen/sources_1/ip/PFT_partial_bram/PFT_partial_bram/PFT_partial_bram_in_context.xdc] for cell 'u_PFT/genblk1[25].PFT_bank'
+Parsing XDC File [c:/Users/catch/Desktop/project_max16/project.gen/sources_1/ip/PFT_partial_bram/PFT_partial_bram/PFT_partial_bram_in_context.xdc] for cell 'u_PFT/genblk1[26].PFT_bank'
+Finished Parsing XDC File [c:/Users/catch/Desktop/project_max16/project.gen/sources_1/ip/PFT_partial_bram/PFT_partial_bram/PFT_partial_bram_in_context.xdc] for cell 'u_PFT/genblk1[26].PFT_bank'
+Parsing XDC File [c:/Users/catch/Desktop/project_max16/project.gen/sources_1/ip/PFT_partial_bram/PFT_partial_bram/PFT_partial_bram_in_context.xdc] for cell 'u_PFT/genblk1[27].PFT_bank'
+Finished Parsing XDC File [c:/Users/catch/Desktop/project_max16/project.gen/sources_1/ip/PFT_partial_bram/PFT_partial_bram/PFT_partial_bram_in_context.xdc] for cell 'u_PFT/genblk1[27].PFT_bank'
+Parsing XDC File [c:/Users/catch/Desktop/project_max16/project.gen/sources_1/ip/PFT_partial_bram/PFT_partial_bram/PFT_partial_bram_in_context.xdc] for cell 'u_PFT/genblk1[28].PFT_bank'
+Finished Parsing XDC File [c:/Users/catch/Desktop/project_max16/project.gen/sources_1/ip/PFT_partial_bram/PFT_partial_bram/PFT_partial_bram_in_context.xdc] for cell 'u_PFT/genblk1[28].PFT_bank'
+Parsing XDC File [c:/Users/catch/Desktop/project_max16/project.gen/sources_1/ip/PFT_partial_bram/PFT_partial_bram/PFT_partial_bram_in_context.xdc] for cell 'u_PFT/genblk1[29].PFT_bank'
+Finished Parsing XDC File [c:/Users/catch/Desktop/project_max16/project.gen/sources_1/ip/PFT_partial_bram/PFT_partial_bram/PFT_partial_bram_in_context.xdc] for cell 'u_PFT/genblk1[29].PFT_bank'
+Parsing XDC File [c:/Users/catch/Desktop/project_max16/project.gen/sources_1/ip/PFT_partial_bram/PFT_partial_bram/PFT_partial_bram_in_context.xdc] for cell 'u_PFT/genblk1[30].PFT_bank'
+Finished Parsing XDC File [c:/Users/catch/Desktop/project_max16/project.gen/sources_1/ip/PFT_partial_bram/PFT_partial_bram/PFT_partial_bram_in_context.xdc] for cell 'u_PFT/genblk1[30].PFT_bank'
+Parsing XDC File [c:/Users/catch/Desktop/project_max16/project.gen/sources_1/ip/PFT_partial_bram/PFT_partial_bram/PFT_partial_bram_in_context.xdc] for cell 'u_PFT/genblk1[31].PFT_bank'
+Finished Parsing XDC File [c:/Users/catch/Desktop/project_max16/project.gen/sources_1/ip/PFT_partial_bram/PFT_partial_bram/PFT_partial_bram_in_context.xdc] for cell 'u_PFT/genblk1[31].PFT_bank'
+Parsing XDC File [C:/Users/catch/Desktop/project_max16/constraint/Nexys-Video_Master.xdc]
+Finished Parsing XDC File [C:/Users/catch/Desktop/project_max16/constraint/Nexys-Video_Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/catch/Desktop/project_max16/constraint/Nexys-Video_Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 1312.945 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.141 . Memory (MB): peak = 1312.945 ; gain = 0.000
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'u_NIT' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'u_PFT/genblk1[0].PFT_bank' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'u_PFT/genblk1[10].PFT_bank' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'u_PFT/genblk1[11].PFT_bank' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'u_PFT/genblk1[12].PFT_bank' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'u_PFT/genblk1[13].PFT_bank' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'u_PFT/genblk1[14].PFT_bank' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'u_PFT/genblk1[15].PFT_bank' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'u_PFT/genblk1[16].PFT_bank' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'u_PFT/genblk1[17].PFT_bank' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'u_PFT/genblk1[18].PFT_bank' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'u_PFT/genblk1[19].PFT_bank' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'u_PFT/genblk1[1].PFT_bank' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'u_PFT/genblk1[20].PFT_bank' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'u_PFT/genblk1[21].PFT_bank' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'u_PFT/genblk1[22].PFT_bank' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'u_PFT/genblk1[23].PFT_bank' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'u_PFT/genblk1[24].PFT_bank' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'u_PFT/genblk1[25].PFT_bank' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'u_PFT/genblk1[26].PFT_bank' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'u_PFT/genblk1[27].PFT_bank' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'u_PFT/genblk1[28].PFT_bank' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'u_PFT/genblk1[29].PFT_bank' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'u_PFT/genblk1[2].PFT_bank' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'u_PFT/genblk1[30].PFT_bank' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'u_PFT/genblk1[31].PFT_bank' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'u_PFT/genblk1[3].PFT_bank' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'u_PFT/genblk1[4].PFT_bank' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'u_PFT/genblk1[5].PFT_bank' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'u_PFT/genblk1[6].PFT_bank' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'u_PFT/genblk1[7].PFT_bank' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'u_PFT/genblk1[8].PFT_bank' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'u_PFT/genblk1[9].PFT_bank' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'u_global_buffer/u_input_bram' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'u_global_buffer/u_output_bram' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'u_global_buffer/u_weight_bram' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 1325.828 ; gain = 189.863
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a200tsbg484-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 1325.828 ; gain = 189.863
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for u_global_buffer/u_output_bram. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for u_global_buffer/u_weight_bram. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for u_global_buffer/u_input_bram. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for u_NIT. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for u_PFT/\genblk1[0].PFT_bank . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for u_PFT/\genblk1[10].PFT_bank . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for u_PFT/\genblk1[11].PFT_bank . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for u_PFT/\genblk1[12].PFT_bank . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for u_PFT/\genblk1[13].PFT_bank . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for u_PFT/\genblk1[14].PFT_bank . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for u_PFT/\genblk1[15].PFT_bank . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for u_PFT/\genblk1[16].PFT_bank . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for u_PFT/\genblk1[17].PFT_bank . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for u_PFT/\genblk1[18].PFT_bank . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for u_PFT/\genblk1[19].PFT_bank . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for u_PFT/\genblk1[1].PFT_bank . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for u_PFT/\genblk1[20].PFT_bank . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for u_PFT/\genblk1[21].PFT_bank . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for u_PFT/\genblk1[22].PFT_bank . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for u_PFT/\genblk1[23].PFT_bank . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for u_PFT/\genblk1[24].PFT_bank . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for u_PFT/\genblk1[25].PFT_bank . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for u_PFT/\genblk1[26].PFT_bank . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for u_PFT/\genblk1[27].PFT_bank . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for u_PFT/\genblk1[28].PFT_bank . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for u_PFT/\genblk1[29].PFT_bank . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for u_PFT/\genblk1[2].PFT_bank . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for u_PFT/\genblk1[30].PFT_bank . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for u_PFT/\genblk1[31].PFT_bank . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for u_PFT/\genblk1[3].PFT_bank . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for u_PFT/\genblk1[4].PFT_bank . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for u_PFT/\genblk1[5].PFT_bank . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for u_PFT/\genblk1[6].PFT_bank . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for u_PFT/\genblk1[7].PFT_bank . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for u_PFT/\genblk1[8].PFT_bank . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for u_PFT/\genblk1[9].PFT_bank . (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 1325.828 ; gain = 189.863
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'controller'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'address_generator'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+              STATE_IDLE |                         00000001 |                              000
+         STATE_LOAD_DATA |                         00000010 |                              001
+    STATE_SYSTOLIC_START |                         00000100 |                              010
+          STATE_SYSTOLIC |                         00001000 |                              011
+          STATE_LOAD_PFT |                         00010000 |                              100
+ STATE_AGGREGATION_START |                         00100000 |                              101
+       STATE_AGGREGATION |                         01000000 |                              110
+              STATE_DONE |                         10000000 |                              111
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'controller'
+WARNING: [Synth 8-327] inferring latch for variable 'dout_reg' [C:/Users/catch/Desktop/project_max16/project.srcs/sources_1/new/encoder32x5.v:10]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+              STATE_IDLE |                             0001 |                              000
+          STATE_CENTROID |                             0010 |                              001
+          STATE_NEIGHBOR |                             0100 |                              010
+              STATE_WAIT |                             1000 |                              011
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'address_generator'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:28 ; elapsed = 00:00:31 . Memory (MB): peak = 1325.828 ; gain = 189.863
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 2     
+	   3 Input   17 Bit       Adders := 1     
+	   2 Input   17 Bit       Adders := 4     
+	   2 Input   13 Bit       Adders := 2     
+	   2 Input   12 Bit       Adders := 2     
+	   2 Input   10 Bit       Adders := 2     
+	   2 Input    9 Bit       Adders := 2     
+	   3 Input    8 Bit       Adders := 16    
+	   2 Input    4 Bit       Adders := 1     
+	   2 Input    2 Bit       Adders := 2     
++---Registers : 
+	              128 Bit    Registers := 5     
+	              120 Bit    Registers := 3     
+	              112 Bit    Registers := 3     
+	              104 Bit    Registers := 3     
+	               96 Bit    Registers := 3     
+	               88 Bit    Registers := 3     
+	               80 Bit    Registers := 3     
+	               72 Bit    Registers := 3     
+	               64 Bit    Registers := 3     
+	               56 Bit    Registers := 3     
+	               48 Bit    Registers := 3     
+	               40 Bit    Registers := 3     
+	               32 Bit    Registers := 3     
+	               24 Bit    Registers := 259   
+	               17 Bit    Registers := 45    
+	               16 Bit    Registers := 5     
+	               13 Bit    Registers := 7     
+	               12 Bit    Registers := 2     
+	               10 Bit    Registers := 2     
+	                9 Bit    Registers := 2     
+	                8 Bit    Registers := 531   
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 306   
++---Muxes : 
+	   2 Input 4096 Bit        Muxes := 1     
+	   2 Input  160 Bit        Muxes := 1     
+	   2 Input  128 Bit        Muxes := 6     
+	   3 Input  128 Bit        Muxes := 2     
+	   2 Input   32 Bit        Muxes := 2     
+	   2 Input   24 Bit        Muxes := 16    
+	   2 Input   17 Bit        Muxes := 7     
+	   8 Input   17 Bit        Muxes := 9     
+	   2 Input   16 Bit        Muxes := 3     
+	   2 Input   15 Bit        Muxes := 6     
+	   2 Input   13 Bit        Muxes := 3     
+	   8 Input   13 Bit        Muxes := 2     
+	   4 Input   13 Bit        Muxes := 1     
+	   2 Input   12 Bit        Muxes := 2     
+	   8 Input   12 Bit        Muxes := 1     
+	   4 Input   12 Bit        Muxes := 1     
+	   2 Input   10 Bit        Muxes := 1     
+	   8 Input   10 Bit        Muxes := 1     
+	   8 Input    9 Bit        Muxes := 2     
+	   2 Input    8 Bit        Muxes := 1031  
+	   8 Input    8 Bit        Muxes := 1     
+	   2 Input    7 Bit        Muxes := 16    
+	  33 Input    5 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 3     
+	   4 Input    4 Bit        Muxes := 1     
+	   2 Input    3 Bit        Muxes := 4     
+	   3 Input    3 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 4     
+	   4 Input    2 Bit        Muxes := 1     
+	  33 Input    1 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 25    
+	   8 Input    1 Bit        Muxes := 25    
+	   3 Input    1 Bit        Muxes := 1     
+	   4 Input    1 Bit        Muxes := 6     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 740 (col length:100)
+BRAMs: 730 (col length: RAMB18 100 RAMB36 50)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+DSP Report: Generating DSP input_addr0, operation Mode is: C+A*B.
+DSP Report: operator input_addr0 is absorbed into DSP input_addr0.
+DSP Report: operator input_addr1 is absorbed into DSP input_addr0.
+DSP Report: Generating DSP output_addr0, operation Mode is: C+A*B.
+DSP Report: operator output_addr0 is absorbed into DSP output_addr0.
+DSP Report: operator output_addr1 is absorbed into DSP output_addr0.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:02:08 ; elapsed = 00:02:12 . Memory (MB): peak = 1387.359 ; gain = 251.395
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+DSP: Preliminary Mapping Report (see note below)
++--------------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name         | DSP Mapping | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++--------------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|systolic_controller | C+A*B       | 12     | 9      | 17     | -      | 17     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|systolic_controller | C+A*B       | 12     | 9      | 17     | -      | 17     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
++--------------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:02:23 ; elapsed = 00:02:27 . Memory (MB): peak = 1387.359 ; gain = 251.395
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:03:46 ; elapsed = 00:03:52 . Memory (MB): peak = 1637.320 ; gain = 501.355
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:04:23 ; elapsed = 00:04:29 . Memory (MB): peak = 1996.590 ; gain = 860.625
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:04:30 ; elapsed = 00:04:36 . Memory (MB): peak = 1996.590 ; gain = 860.625
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:04:30 ; elapsed = 00:04:36 . Memory (MB): peak = 1996.590 ; gain = 860.625
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:04:38 ; elapsed = 00:04:45 . Memory (MB): peak = 1996.590 ; gain = 860.625
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:04:40 ; elapsed = 00:04:47 . Memory (MB): peak = 1996.590 ; gain = 860.625
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:04:41 ; elapsed = 00:04:48 . Memory (MB): peak = 1996.590 ; gain = 860.625
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:04:42 ; elapsed = 00:04:48 . Memory (MB): peak = 1996.590 ; gain = 860.625
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++------------+-----------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name | RTL Name                                                        | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++------------+-----------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|top         | u_delay_unit_write/intermediate_reg[33][0]                      | 34     | 1     | NO           | NO                 | YES               | 0      | 2       | 
+|top         | u_delay_unit_addr/intermediate_reg[33][16]                      | 34     | 17    | NO           | NO                 | YES               | 0      | 34      | 
+|top         | u_systolic_input_buffer_partialsum/genblk1[3].row/mem_reg[31]   | 4      | 8     | YES          | NO                 | YES               | 8      | 0       | 
+|top         | u_systolic_input_buffer_partialsum/genblk1[4].row/mem_reg[39]   | 5      | 8     | YES          | NO                 | YES               | 8      | 0       | 
+|top         | u_systolic_input_buffer_partialsum/genblk1[5].row/mem_reg[47]   | 6      | 8     | YES          | NO                 | YES               | 8      | 0       | 
+|top         | u_systolic_input_buffer_partialsum/genblk1[6].row/mem_reg[55]   | 7      | 8     | YES          | NO                 | YES               | 8      | 0       | 
+|top         | u_systolic_input_buffer_partialsum/genblk1[7].row/mem_reg[63]   | 8      | 8     | YES          | NO                 | YES               | 8      | 0       | 
+|top         | u_systolic_input_buffer_partialsum/genblk1[8].row/mem_reg[71]   | 9      | 8     | YES          | NO                 | YES               | 8      | 0       | 
+|top         | u_systolic_input_buffer_partialsum/genblk1[9].row/mem_reg[79]   | 10     | 8     | YES          | NO                 | YES               | 8      | 0       | 
+|top         | u_systolic_input_buffer_partialsum/genblk1[10].row/mem_reg[87]  | 11     | 8     | YES          | NO                 | YES               | 8      | 0       | 
+|top         | u_systolic_input_buffer_partialsum/genblk1[11].row/mem_reg[95]  | 12     | 8     | YES          | NO                 | YES               | 8      | 0       | 
+|top         | u_systolic_input_buffer_partialsum/genblk1[12].row/mem_reg[103] | 13     | 8     | YES          | NO                 | YES               | 8      | 0       | 
+|top         | u_systolic_input_buffer_partialsum/genblk1[13].row/mem_reg[111] | 14     | 8     | YES          | NO                 | YES               | 8      | 0       | 
+|top         | u_systolic_input_buffer_partialsum/genblk1[14].row/mem_reg[119] | 15     | 8     | YES          | NO                 | YES               | 8      | 0       | 
+|top         | u_systolic_input_buffer_partialsum/genblk1[15].row/mem_reg[127] | 16     | 8     | YES          | NO                 | YES               | 8      | 0       | 
+|top         | systolic_input_buffer_input/genblk1[3].row/mem_reg[31]          | 4      | 8     | YES          | NO                 | YES               | 8      | 0       | 
+|top         | systolic_input_buffer_input/genblk1[4].row/mem_reg[39]          | 5      | 8     | YES          | NO                 | YES               | 8      | 0       | 
+|top         | systolic_input_buffer_input/genblk1[5].row/mem_reg[47]          | 6      | 8     | YES          | NO                 | YES               | 8      | 0       | 
+|top         | systolic_input_buffer_input/genblk1[6].row/mem_reg[55]          | 7      | 8     | YES          | NO                 | YES               | 8      | 0       | 
+|top         | systolic_input_buffer_input/genblk1[7].row/mem_reg[63]          | 8      | 8     | YES          | NO                 | YES               | 8      | 0       | 
+|top         | systolic_input_buffer_input/genblk1[8].row/mem_reg[71]          | 9      | 8     | YES          | NO                 | YES               | 8      | 0       | 
+|top         | systolic_input_buffer_input/genblk1[9].row/mem_reg[79]          | 10     | 8     | YES          | NO                 | YES               | 8      | 0       | 
+|top         | systolic_input_buffer_input/genblk1[10].row/mem_reg[87]         | 11     | 8     | YES          | NO                 | YES               | 8      | 0       | 
+|top         | systolic_input_buffer_input/genblk1[11].row/mem_reg[95]         | 12     | 8     | YES          | NO                 | YES               | 8      | 0       | 
+|top         | systolic_input_buffer_input/genblk1[12].row/mem_reg[103]        | 13     | 8     | YES          | NO                 | YES               | 8      | 0       | 
+|top         | systolic_input_buffer_input/genblk1[13].row/mem_reg[111]        | 14     | 8     | YES          | NO                 | YES               | 8      | 0       | 
+|top         | systolic_input_buffer_input/genblk1[14].row/mem_reg[119]        | 15     | 8     | YES          | NO                 | YES               | 8      | 0       | 
+|top         | systolic_input_buffer_input/genblk1[15].row/mem_reg[127]        | 16     | 8     | YES          | NO                 | YES               | 8      | 0       | 
+|top         | u_systolic_output_buffer/genblk1[15].row/mem_reg[127]           | 16     | 8     | YES          | NO                 | YES               | 8      | 0       | 
+|top         | u_systolic_output_buffer/genblk1[14].row/mem_reg[119]           | 15     | 8     | YES          | NO                 | YES               | 8      | 0       | 
+|top         | u_systolic_output_buffer/genblk1[13].row/mem_reg[111]           | 14     | 8     | YES          | NO                 | YES               | 8      | 0       | 
+|top         | u_systolic_output_buffer/genblk1[12].row/mem_reg[103]           | 13     | 8     | YES          | NO                 | YES               | 8      | 0       | 
+|top         | u_systolic_output_buffer/genblk1[11].row/mem_reg[95]            | 12     | 8     | YES          | NO                 | YES               | 8      | 0       | 
+|top         | u_systolic_output_buffer/genblk1[10].row/mem_reg[87]            | 11     | 8     | YES          | NO                 | YES               | 8      | 0       | 
+|top         | u_systolic_output_buffer/genblk1[9].row/mem_reg[79]             | 10     | 8     | YES          | NO                 | YES               | 8      | 0       | 
+|top         | u_systolic_output_buffer/genblk1[8].row/mem_reg[71]             | 9      | 8     | YES          | NO                 | YES               | 8      | 0       | 
+|top         | u_systolic_output_buffer/genblk1[7].row/mem_reg[63]             | 8      | 8     | YES          | NO                 | YES               | 8      | 0       | 
+|top         | u_systolic_output_buffer/genblk1[6].row/mem_reg[55]             | 7      | 8     | YES          | NO                 | YES               | 8      | 0       | 
+|top         | u_systolic_output_buffer/genblk1[5].row/mem_reg[47]             | 6      | 8     | YES          | NO                 | YES               | 8      | 0       | 
+|top         | u_systolic_output_buffer/genblk1[4].row/mem_reg[39]             | 5      | 8     | YES          | NO                 | YES               | 8      | 0       | 
+|top         | u_systolic_output_buffer/genblk1[3].row/mem_reg[31]             | 4      | 8     | YES          | NO                 | YES               | 8      | 0       | 
++------------+-----------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+-----------------+----------+
+|      |BlackBox name    |Instances |
++------+-----------------+----------+
+|1     |NIT_bram         |         1|
+|2     |PFT_partial_bram |        32|
+|3     |input_bram       |         1|
+|4     |weight_bram      |         1|
+|5     |output_bram      |         1|
++------+-----------------+----------+
+
+Report Cell Usage: 
++------+-----------------+------+
+|      |Cell             |Count |
++------+-----------------+------+
+|1     |NIT_bram         |     1|
+|2     |PFT_partial_bram |    32|
+|34    |input_bram       |     1|
+|35    |output_bram      |     1|
+|36    |weight_bram      |     1|
+|37    |BUFG             |     2|
+|38    |CARRY4           |  5181|
+|39    |DSP48E1          |     2|
+|40    |LUT1             |   286|
+|41    |LUT2             | 12729|
+|42    |LUT3             |  3847|
+|43    |LUT4             |  9345|
+|44    |LUT5             |  4912|
+|45    |LUT6             | 14020|
+|46    |MUXF7            |   512|
+|47    |MUXF8            |   256|
+|48    |SRL16E           |   312|
+|49    |SRLC32E          |    36|
+|50    |FDCE             |  8834|
+|51    |FDPE             |     3|
+|52    |FDRE             |  2637|
+|53    |FDSE             |    16|
+|54    |LD               |    35|
+|55    |IBUF             |   578|
+|56    |OBUF             |     1|
++------+-----------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:04:42 ; elapsed = 00:04:48 . Memory (MB): peak = 1996.590 ; gain = 860.625
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:04:22 ; elapsed = 00:04:40 . Memory (MB): peak = 1996.590 ; gain = 681.676
+Synthesis Optimization Complete : Time (s): cpu = 00:04:42 ; elapsed = 00:04:49 . Memory (MB): peak = 1996.590 ; gain = 860.625
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1996.590 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 5986 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.023 . Memory (MB): peak = 1996.590 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 35 instances were transformed.
+  LD => LDCE: 35 instances
+
+Synth Design complete, checksum: 5fcb8bb4
+INFO: [Common 17-83] Releasing license: Synthesis
+107 Infos, 37 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:05:06 ; elapsed = 00:05:15 . Memory (MB): peak = 1996.590 ; gain = 860.625
+INFO: [Common 17-1381] The checkpoint 'C:/Users/catch/Desktop/project_max16/project.runs/synth_1/top.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:17 ; elapsed = 00:00:12 . Memory (MB): peak = 1996.590 ; gain = 0.000
+INFO: [runtcl-4] Executing : report_utilization -file top_utilization_synth.rpt -pb top_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sat May  7 23:23:30 2022...

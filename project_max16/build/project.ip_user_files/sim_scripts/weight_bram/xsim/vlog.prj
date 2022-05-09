@@ -1,0 +1,6 @@
+verilog xil_defaultlib  \
+"../../../../project.gen/sources_1/ip/weight_bram/sim/weight_bram.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+nosort
