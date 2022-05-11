@@ -1,0 +1,569 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:35 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Mon May  9 14:09:15 2022
+# Process ID: 42774
+# Current directory: /home/ipa/junseo/tmp/khp/mesorasi/project/project_max16
+# Command line: vivado
+# Log file: /home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/vivado.log
+# Journal file: /home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/vivado.jou
+#-----------------------------------------------------------
+start_gui
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:arty-s7-25:part0:1.0 available at /opt/Xilinx/Vivado/2020.1/data/boards/board_files/arty-s7-25/E.0/board.xml as part xc7s25csga324-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:arty-s7-50:part0:1.0 available at /opt/Xilinx/Vivado/2020.1/data/boards/board_files/arty-s7-50/B.0/board.xml as part xc7s50csga324-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:arty-z7-10:part0:1.0 available at /opt/Xilinx/Vivado/2020.1/data/boards/board_files/arty-z7-10/A.0/board.xml as part xc7z010clg400-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:arty-z7-20:part0:1.0 available at /opt/Xilinx/Vivado/2020.1/data/boards/board_files/arty-z7-20/A.0/board.xml as part xc7z020clg400-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:cmod-s7-25:part0:1.0 available at /opt/Xilinx/Vivado/2020.1/data/boards/board_files/cmod-s7-25/B.0/board.xml as part xc7s25csga225-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:cora-z7-07s:part0:1.0 available at /opt/Xilinx/Vivado/2020.1/data/boards/board_files/cora-z7-07s/B.0/board.xml as part xc7z007sclg400-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:cora-z7-10:part0:1.0 available at /opt/Xilinx/Vivado/2020.1/data/boards/board_files/cora-z7-10/B.0/board.xml as part xc7z010clg400-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:eclypse-z7:part0:1.0 available at /opt/Xilinx/Vivado/2020.1/data/boards/board_files/eclypse-z7/A.0/board.xml as part xc7z020clg484-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:eclypse-z7:part0:1.1 available at /opt/Xilinx/Vivado/2020.1/data/boards/board_files/eclypse-z7/B.0/board.xml as part xc7z020clg484-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:genesys2:part0:1.1 available at /opt/Xilinx/Vivado/2020.1/data/boards/board_files/genesys2/H/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:gzu_3eg:part0:1.0 available at /opt/Xilinx/Vivado/2020.1/data/boards/board_files/genesys-zu-3eg/B.0/board.xml as part xczu3eg-sfvc784-1-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:gzu_3eg:part0:1.1 available at /opt/Xilinx/Vivado/2020.1/data/boards/board_files/genesys-zu-3eg/D.0/board.xml as part xczu3eg-sfvc784-1-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:gzu_5ev:part0:1.0 available at /opt/Xilinx/Vivado/2020.1/data/boards/board_files/genesys-zu-5ev/C.0/board.xml as part xczu5ev-sfvc784-1-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:sword:part0:1.0 available at /opt/Xilinx/Vivado/2020.1/data/boards/board_files/sword/C.0/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:zedboard:part0:1.0 available at /opt/Xilinx/Vivado/2020.1/data/boards/board_files/zedboard/1.3/board.xml as part xc7z020clg484-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:zybo-z7-10:part0:1.0 available at /opt/Xilinx/Vivado/2020.1/data/boards/board_files/zybo-z7-10/A.0/board.xml as part xc7z010clg400-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:zybo-z7-20:part0:1.0 available at /opt/Xilinx/Vivado/2020.1/data/boards/board_files/zybo-z7-20/A.0/board.xml as part xc7z020clg400-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:zybo:part0:1.0 available at /opt/Xilinx/Vivado/2020.1/data/boards/board_files/zybo/B.3/board.xml as part xc7z010clg400-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:zybo:part0:2.0 available at /opt/Xilinx/Vivado/2020.1/data/boards/board_files/zybo/B.4/board.xml as part xc7z010clg400-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part tul.com.tw:pynq-z2:part0:1.0 available at /opt/Xilinx/Vivado/2020.1/data/boards/board_files/pynq-z2/A.0/board.xml as part xc7z020clg400-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:arty-s7-25:part0:1.0 available at /opt/Xilinx/Vivado/2020.1/data/boards/board_files/arty-s7-25/E.0/board.xml as part xc7s25csga324-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:arty-s7-50:part0:1.0 available at /opt/Xilinx/Vivado/2020.1/data/boards/board_files/arty-s7-50/B.0/board.xml as part xc7s50csga324-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:arty-z7-10:part0:1.0 available at /opt/Xilinx/Vivado/2020.1/data/boards/board_files/arty-z7-10/A.0/board.xml as part xc7z010clg400-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:arty-z7-20:part0:1.0 available at /opt/Xilinx/Vivado/2020.1/data/boards/board_files/arty-z7-20/A.0/board.xml as part xc7z020clg400-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:cmod-s7-25:part0:1.0 available at /opt/Xilinx/Vivado/2020.1/data/boards/board_files/cmod-s7-25/B.0/board.xml as part xc7s25csga225-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:cora-z7-07s:part0:1.0 available at /opt/Xilinx/Vivado/2020.1/data/boards/board_files/cora-z7-07s/B.0/board.xml as part xc7z007sclg400-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:cora-z7-10:part0:1.0 available at /opt/Xilinx/Vivado/2020.1/data/boards/board_files/cora-z7-10/B.0/board.xml as part xc7z010clg400-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:eclypse-z7:part0:1.0 available at /opt/Xilinx/Vivado/2020.1/data/boards/board_files/eclypse-z7/A.0/board.xml as part xc7z020clg484-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:eclypse-z7:part0:1.1 available at /opt/Xilinx/Vivado/2020.1/data/boards/board_files/eclypse-z7/B.0/board.xml as part xc7z020clg484-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:genesys2:part0:1.1 available at /opt/Xilinx/Vivado/2020.1/data/boards/board_files/genesys2/H/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:gzu_3eg:part0:1.0 available at /opt/Xilinx/Vivado/2020.1/data/boards/board_files/genesys-zu-3eg/B.0/board.xml as part xczu3eg-sfvc784-1-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:gzu_3eg:part0:1.1 available at /opt/Xilinx/Vivado/2020.1/data/boards/board_files/genesys-zu-3eg/D.0/board.xml as part xczu3eg-sfvc784-1-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:gzu_5ev:part0:1.0 available at /opt/Xilinx/Vivado/2020.1/data/boards/board_files/genesys-zu-5ev/C.0/board.xml as part xczu5ev-sfvc784-1-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:sword:part0:1.0 available at /opt/Xilinx/Vivado/2020.1/data/boards/board_files/sword/C.0/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:zedboard:part0:1.0 available at /opt/Xilinx/Vivado/2020.1/data/boards/board_files/zedboard/1.3/board.xml as part xc7z020clg484-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:zybo-z7-10:part0:1.0 available at /opt/Xilinx/Vivado/2020.1/data/boards/board_files/zybo-z7-10/A.0/board.xml as part xc7z010clg400-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:zybo-z7-20:part0:1.0 available at /opt/Xilinx/Vivado/2020.1/data/boards/board_files/zybo-z7-20/A.0/board.xml as part xc7z020clg400-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:zybo:part0:1.0 available at /opt/Xilinx/Vivado/2020.1/data/boards/board_files/zybo/B.3/board.xml as part xc7z010clg400-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:zybo:part0:2.0 available at /opt/Xilinx/Vivado/2020.1/data/boards/board_files/zybo/B.4/board.xml as part xc7z010clg400-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part tul.com.tw:pynq-z2:part0:1.0 available at /opt/Xilinx/Vivado/2020.1/data/boards/board_files/pynq-z2/A.0/board.xml as part xc7z020clg400-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:arty-s7-25:part0:1.0 available at /opt/Xilinx/Vivado/2020.1/data/boards/board_files/arty-s7-25/E.0/board.xml as part xc7s25csga324-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:arty-s7-50:part0:1.0 available at /opt/Xilinx/Vivado/2020.1/data/boards/board_files/arty-s7-50/B.0/board.xml as part xc7s50csga324-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:arty-z7-10:part0:1.0 available at /opt/Xilinx/Vivado/2020.1/data/boards/board_files/arty-z7-10/A.0/board.xml as part xc7z010clg400-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:arty-z7-20:part0:1.0 available at /opt/Xilinx/Vivado/2020.1/data/boards/board_files/arty-z7-20/A.0/board.xml as part xc7z020clg400-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:cmod-s7-25:part0:1.0 available at /opt/Xilinx/Vivado/2020.1/data/boards/board_files/cmod-s7-25/B.0/board.xml as part xc7s25csga225-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:cora-z7-07s:part0:1.0 available at /opt/Xilinx/Vivado/2020.1/data/boards/board_files/cora-z7-07s/B.0/board.xml as part xc7z007sclg400-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:cora-z7-10:part0:1.0 available at /opt/Xilinx/Vivado/2020.1/data/boards/board_files/cora-z7-10/B.0/board.xml as part xc7z010clg400-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:eclypse-z7:part0:1.0 available at /opt/Xilinx/Vivado/2020.1/data/boards/board_files/eclypse-z7/A.0/board.xml as part xc7z020clg484-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:eclypse-z7:part0:1.1 available at /opt/Xilinx/Vivado/2020.1/data/boards/board_files/eclypse-z7/B.0/board.xml as part xc7z020clg484-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:genesys2:part0:1.1 available at /opt/Xilinx/Vivado/2020.1/data/boards/board_files/genesys2/H/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:gzu_3eg:part0:1.0 available at /opt/Xilinx/Vivado/2020.1/data/boards/board_files/genesys-zu-3eg/B.0/board.xml as part xczu3eg-sfvc784-1-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:gzu_3eg:part0:1.1 available at /opt/Xilinx/Vivado/2020.1/data/boards/board_files/genesys-zu-3eg/D.0/board.xml as part xczu3eg-sfvc784-1-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:gzu_5ev:part0:1.0 available at /opt/Xilinx/Vivado/2020.1/data/boards/board_files/genesys-zu-5ev/C.0/board.xml as part xczu5ev-sfvc784-1-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:sword:part0:1.0 available at /opt/Xilinx/Vivado/2020.1/data/boards/board_files/sword/C.0/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:zedboard:part0:1.0 available at /opt/Xilinx/Vivado/2020.1/data/boards/board_files/zedboard/1.3/board.xml as part xc7z020clg484-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:zybo-z7-10:part0:1.0 available at /opt/Xilinx/Vivado/2020.1/data/boards/board_files/zybo-z7-10/A.0/board.xml as part xc7z010clg400-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:zybo-z7-20:part0:1.0 available at /opt/Xilinx/Vivado/2020.1/data/boards/board_files/zybo-z7-20/A.0/board.xml as part xc7z020clg400-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:zybo:part0:1.0 available at /opt/Xilinx/Vivado/2020.1/data/boards/board_files/zybo/B.3/board.xml as part xc7z010clg400-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:zybo:part0:2.0 available at /opt/Xilinx/Vivado/2020.1/data/boards/board_files/zybo/B.4/board.xml as part xc7z010clg400-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part tul.com.tw:pynq-z2:part0:1.0 available at /opt/Xilinx/Vivado/2020.1/data/boards/board_files/pynq-z2/A.0/board.xml as part xc7z020clg400-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:arty-s7-25:part0:1.0 available at /opt/Xilinx/Vivado/2020.1/data/boards/board_files/arty-s7-25/E.0/board.xml as part xc7s25csga324-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:arty-s7-50:part0:1.0 available at /opt/Xilinx/Vivado/2020.1/data/boards/board_files/arty-s7-50/B.0/board.xml as part xc7s50csga324-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:arty-z7-10:part0:1.0 available at /opt/Xilinx/Vivado/2020.1/data/boards/board_files/arty-z7-10/A.0/board.xml as part xc7z010clg400-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:arty-z7-20:part0:1.0 available at /opt/Xilinx/Vivado/2020.1/data/boards/board_files/arty-z7-20/A.0/board.xml as part xc7z020clg400-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:cmod-s7-25:part0:1.0 available at /opt/Xilinx/Vivado/2020.1/data/boards/board_files/cmod-s7-25/B.0/board.xml as part xc7s25csga225-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:cora-z7-07s:part0:1.0 available at /opt/Xilinx/Vivado/2020.1/data/boards/board_files/cora-z7-07s/B.0/board.xml as part xc7z007sclg400-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:cora-z7-10:part0:1.0 available at /opt/Xilinx/Vivado/2020.1/data/boards/board_files/cora-z7-10/B.0/board.xml as part xc7z010clg400-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:eclypse-z7:part0:1.0 available at /opt/Xilinx/Vivado/2020.1/data/boards/board_files/eclypse-z7/A.0/board.xml as part xc7z020clg484-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:eclypse-z7:part0:1.1 available at /opt/Xilinx/Vivado/2020.1/data/boards/board_files/eclypse-z7/B.0/board.xml as part xc7z020clg484-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:genesys2:part0:1.1 available at /opt/Xilinx/Vivado/2020.1/data/boards/board_files/genesys2/H/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:gzu_3eg:part0:1.0 available at /opt/Xilinx/Vivado/2020.1/data/boards/board_files/genesys-zu-3eg/B.0/board.xml as part xczu3eg-sfvc784-1-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:gzu_3eg:part0:1.1 available at /opt/Xilinx/Vivado/2020.1/data/boards/board_files/genesys-zu-3eg/D.0/board.xml as part xczu3eg-sfvc784-1-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:gzu_5ev:part0:1.0 available at /opt/Xilinx/Vivado/2020.1/data/boards/board_files/genesys-zu-5ev/C.0/board.xml as part xczu5ev-sfvc784-1-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:sword:part0:1.0 available at /opt/Xilinx/Vivado/2020.1/data/boards/board_files/sword/C.0/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:zedboard:part0:1.0 available at /opt/Xilinx/Vivado/2020.1/data/boards/board_files/zedboard/1.3/board.xml as part xc7z020clg484-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:zybo-z7-10:part0:1.0 available at /opt/Xilinx/Vivado/2020.1/data/boards/board_files/zybo-z7-10/A.0/board.xml as part xc7z010clg400-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:zybo-z7-20:part0:1.0 available at /opt/Xilinx/Vivado/2020.1/data/boards/board_files/zybo-z7-20/A.0/board.xml as part xc7z020clg400-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:zybo:part0:1.0 available at /opt/Xilinx/Vivado/2020.1/data/boards/board_files/zybo/B.3/board.xml as part xc7z010clg400-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:zybo:part0:2.0 available at /opt/Xilinx/Vivado/2020.1/data/boards/board_files/zybo/B.4/board.xml as part xc7z010clg400-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part tul.com.tw:pynq-z2:part0:1.0 available at /opt/Xilinx/Vivado/2020.1/data/boards/board_files/pynq-z2/A.0/board.xml as part xc7z020clg400-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:arty-s7-25:part0:1.0 available at /opt/Xilinx/Vivado/2020.1/data/boards/board_files/arty-s7-25/E.0/board.xml as part xc7s25csga324-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:arty-s7-50:part0:1.0 available at /opt/Xilinx/Vivado/2020.1/data/boards/board_files/arty-s7-50/B.0/board.xml as part xc7s50csga324-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:arty-z7-10:part0:1.0 available at /opt/Xilinx/Vivado/2020.1/data/boards/board_files/arty-z7-10/A.0/board.xml as part xc7z010clg400-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:arty-z7-20:part0:1.0 available at /opt/Xilinx/Vivado/2020.1/data/boards/board_files/arty-z7-20/A.0/board.xml as part xc7z020clg400-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:cmod-s7-25:part0:1.0 available at /opt/Xilinx/Vivado/2020.1/data/boards/board_files/cmod-s7-25/B.0/board.xml as part xc7s25csga225-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:cora-z7-07s:part0:1.0 available at /opt/Xilinx/Vivado/2020.1/data/boards/board_files/cora-z7-07s/B.0/board.xml as part xc7z007sclg400-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:cora-z7-10:part0:1.0 available at /opt/Xilinx/Vivado/2020.1/data/boards/board_files/cora-z7-10/B.0/board.xml as part xc7z010clg400-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:eclypse-z7:part0:1.0 available at /opt/Xilinx/Vivado/2020.1/data/boards/board_files/eclypse-z7/A.0/board.xml as part xc7z020clg484-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:eclypse-z7:part0:1.1 available at /opt/Xilinx/Vivado/2020.1/data/boards/board_files/eclypse-z7/B.0/board.xml as part xc7z020clg484-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:genesys2:part0:1.1 available at /opt/Xilinx/Vivado/2020.1/data/boards/board_files/genesys2/H/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:gzu_3eg:part0:1.0 available at /opt/Xilinx/Vivado/2020.1/data/boards/board_files/genesys-zu-3eg/B.0/board.xml as part xczu3eg-sfvc784-1-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:gzu_3eg:part0:1.1 available at /opt/Xilinx/Vivado/2020.1/data/boards/board_files/genesys-zu-3eg/D.0/board.xml as part xczu3eg-sfvc784-1-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:gzu_5ev:part0:1.0 available at /opt/Xilinx/Vivado/2020.1/data/boards/board_files/genesys-zu-5ev/C.0/board.xml as part xczu5ev-sfvc784-1-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:sword:part0:1.0 available at /opt/Xilinx/Vivado/2020.1/data/boards/board_files/sword/C.0/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:zedboard:part0:1.0 available at /opt/Xilinx/Vivado/2020.1/data/boards/board_files/zedboard/1.3/board.xml as part xc7z020clg484-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:zybo-z7-10:part0:1.0 available at /opt/Xilinx/Vivado/2020.1/data/boards/board_files/zybo-z7-10/A.0/board.xml as part xc7z010clg400-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:zybo-z7-20:part0:1.0 available at /opt/Xilinx/Vivado/2020.1/data/boards/board_files/zybo-z7-20/A.0/board.xml as part xc7z020clg400-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:zybo:part0:1.0 available at /opt/Xilinx/Vivado/2020.1/data/boards/board_files/zybo/B.3/board.xml as part xc7z010clg400-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:zybo:part0:2.0 available at /opt/Xilinx/Vivado/2020.1/data/boards/board_files/zybo/B.4/board.xml as part xc7z010clg400-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part tul.com.tw:pynq-z2:part0:1.0 available at /opt/Xilinx/Vivado/2020.1/data/boards/board_files/pynq-z2/A.0/board.xml as part xc7z020clg400-1 specified in board_part file is either invalid or not available
+INFO: [Common 17-14] Message 'Board 49-26' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+create_project project_1 /home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/build -part xc7a200tsbg484-1
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2020.1/data/ip'.
+set_property board_part digilentinc.com:nexys_video:part0:1.1 [current_project]
+add_files -fileset constrs_1 -norecurse /home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/constraint/Nexys-Video_Master.xdc
+add_files -norecurse {/home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/src/PE.v /home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/src/valid_generator32.v /home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/src/encoder32x5.v /home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/src/systolic_input_buffer.v /home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/src/microaddr_generator.v /home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/src/shift_register.v /home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/src/PFT.v /home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/src/address_generator.v /home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/src/simple_sram2.v /home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/src/subtract_module32.v /home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/src/top.v /home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/src/max_operator.v /home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/src/systolic_controller.v /home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/src/subtract_operator.v /home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/src/systolic.v /home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/src/max_module32.v /home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/src/simple_sram.v /home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/src/PFT_bram.v /home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/src/decoder5x32.v /home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/src/global_buffer.v /home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/src/systolic_row.v /home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/src/line_buffer.v /home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/src/controller.v /home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/src/systolic_output_buffer.v /home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/src/delay_unit.v}
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+launch_runs synth_1 -jobs 24
+[Mon May  9 14:12:54 2022] Launched synth_1...
+Run output will be captured here: /home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/build/project_1.runs/synth_1/runme.log
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+create_ip -name blk_mem_gen -vendor xilinx.com -library ip -version 8.4 -module_name NIT_bram
+set_property -dict [list CONFIG.Component_Name {NIT_bram} CONFIG.Memory_Type {Simple_Dual_Port_RAM} CONFIG.Write_Width_A {330} CONFIG.Write_Depth_A {4096} CONFIG.Read_Width_A {330} CONFIG.Operating_Mode_A {NO_CHANGE} CONFIG.Enable_A {Always_Enabled} CONFIG.Write_Width_B {330} CONFIG.Read_Width_B {330} CONFIG.Enable_B {Always_Enabled} CONFIG.Register_PortA_Output_of_Memory_Primitives {false} CONFIG.Register_PortB_Output_of_Memory_Primitives {false} CONFIG.Port_B_Clock {100} CONFIG.Port_B_Enable_Rate {100}] [get_ips NIT_bram]
+WARNING: [Vivado 12-3523] Attempt to change 'Component_Name' from 'NIT_bram' to 'NIT_bram' is not allowed and is ignored.
+generate_target {instantiation_template} [get_files /home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/build/project_1.srcs/sources_1/ip/NIT_bram/NIT_bram.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'NIT_bram'...
+update_compile_order -fileset sources_1
+generate_target all [get_files  /home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/build/project_1.srcs/sources_1/ip/NIT_bram/NIT_bram.xci]
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'NIT_bram'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'NIT_bram'...
+INFO: [IP_Flow 19-1686] Generating 'Miscellaneous' target for IP 'NIT_bram'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'NIT_bram'...
+catch { config_ip_cache -export [get_ips -all NIT_bram] }
+export_ip_user_files -of_objects [get_files /home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/build/project_1.srcs/sources_1/ip/NIT_bram/NIT_bram.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] /home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/build/project_1.srcs/sources_1/ip/NIT_bram/NIT_bram.xci]
+launch_runs NIT_bram_synth_1 -jobs 24
+[Mon May  9 14:16:23 2022] Launched NIT_bram_synth_1...
+Run output will be captured here: /home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/build/project_1.runs/NIT_bram_synth_1/runme.log
+export_simulation -of_objects [get_files /home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/build/project_1.srcs/sources_1/ip/NIT_bram/NIT_bram.xci] -directory /home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/build/project_1.ip_user_files/sim_scripts -ip_user_files_dir /home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/build/project_1.ip_user_files -ipstatic_source_dir /home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/build/project_1.ip_user_files/ipstatic -lib_map_path [list {modelsim=/home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/build/project_1.cache/compile_simlib/modelsim} {questa=/home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/build/project_1.cache/compile_simlib/questa} {ies=/home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/build/project_1.cache/compile_simlib/ies} {xcelium=/home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/build/project_1.cache/compile_simlib/xcelium} {vcs=/home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/build/project_1.cache/compile_simlib/vcs} {riviera=/home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/build/project_1.cache/compile_simlib/riviera}] -use_ip_compiled_libs -force -quiet
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+create_ip -name blk_mem_gen -vendor xilinx.com -library ip -version 8.4 -module_name PFT_partial_bram
+set_property -dict [list CONFIG.Component_Name {PFT_partial_bram} CONFIG.Memory_Type {Simple_Dual_Port_RAM} CONFIG.Write_Width_A {128} CONFIG.Write_Depth_A {32} CONFIG.Read_Width_A {128} CONFIG.Operating_Mode_A {NO_CHANGE} CONFIG.Enable_A {Always_Enabled} CONFIG.Write_Width_B {128} CONFIG.Read_Width_B {128} CONFIG.Enable_B {Always_Enabled} CONFIG.Register_PortA_Output_of_Memory_Primitives {false} CONFIG.Register_PortB_Output_of_Memory_Primitives {false} CONFIG.Port_B_Clock {100} CONFIG.Port_B_Enable_Rate {100}] [get_ips PFT_partial_bram]
+WARNING: [Vivado 12-3523] Attempt to change 'Component_Name' from 'PFT_partial_bram' to 'PFT_partial_bram' is not allowed and is ignored.
+generate_target {instantiation_template} [get_files /home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/build/project_1.srcs/sources_1/ip/PFT_partial_bram/PFT_partial_bram.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'PFT_partial_bram'...
+generate_target all [get_files  /home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/build/project_1.srcs/sources_1/ip/PFT_partial_bram/PFT_partial_bram.xci]
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'PFT_partial_bram'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'PFT_partial_bram'...
+INFO: [IP_Flow 19-1686] Generating 'Miscellaneous' target for IP 'PFT_partial_bram'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'PFT_partial_bram'...
+catch { config_ip_cache -export [get_ips -all PFT_partial_bram] }
+export_ip_user_files -of_objects [get_files /home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/build/project_1.srcs/sources_1/ip/PFT_partial_bram/PFT_partial_bram.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] /home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/build/project_1.srcs/sources_1/ip/PFT_partial_bram/PFT_partial_bram.xci]
+launch_runs PFT_partial_bram_synth_1 -jobs 24
+[Mon May  9 14:17:34 2022] Launched PFT_partial_bram_synth_1...
+Run output will be captured here: /home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/build/project_1.runs/PFT_partial_bram_synth_1/runme.log
+export_simulation -of_objects [get_files /home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/build/project_1.srcs/sources_1/ip/PFT_partial_bram/PFT_partial_bram.xci] -directory /home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/build/project_1.ip_user_files/sim_scripts -ip_user_files_dir /home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/build/project_1.ip_user_files -ipstatic_source_dir /home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/build/project_1.ip_user_files/ipstatic -lib_map_path [list {modelsim=/home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/build/project_1.cache/compile_simlib/modelsim} {questa=/home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/build/project_1.cache/compile_simlib/questa} {ies=/home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/build/project_1.cache/compile_simlib/ies} {xcelium=/home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/build/project_1.cache/compile_simlib/xcelium} {vcs=/home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/build/project_1.cache/compile_simlib/vcs} {riviera=/home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/build/project_1.cache/compile_simlib/riviera}] -use_ip_compiled_libs -force -quiet
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+create_ip -name blk_mem_gen -vendor xilinx.com -library ip -version 8.4 -module_name input_bram
+set_property -dict [list CONFIG.Component_Name {input_bram} CONFIG.Memory_Type {Simple_Dual_Port_RAM} CONFIG.Write_Width_A {128} CONFIG.Write_Depth_A {32768} CONFIG.Read_Width_A {128} CONFIG.Operating_Mode_A {WRITE_FIRST} CONFIG.Enable_A {Always_Enabled} CONFIG.Write_Width_B {128} CONFIG.Read_Width_B {128} CONFIG.Enable_B {Always_Enabled} CONFIG.Register_PortA_Output_of_Memory_Primitives {false} CONFIG.Register_PortB_Output_of_Memory_Primitives {false} CONFIG.Port_B_Clock {100} CONFIG.Port_B_Enable_Rate {100}] [get_ips input_bram]
+WARNING: [Vivado 12-3523] Attempt to change 'Component_Name' from 'input_bram' to 'input_bram' is not allowed and is ignored.
+generate_target {instantiation_template} [get_files /home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/build/project_1.srcs/sources_1/ip/input_bram/input_bram.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'input_bram'...
+generate_target all [get_files  /home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/build/project_1.srcs/sources_1/ip/input_bram/input_bram.xci]
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'input_bram'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'input_bram'...
+INFO: [IP_Flow 19-1686] Generating 'Miscellaneous' target for IP 'input_bram'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'input_bram'...
+catch { config_ip_cache -export [get_ips -all input_bram] }
+export_ip_user_files -of_objects [get_files /home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/build/project_1.srcs/sources_1/ip/input_bram/input_bram.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] /home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/build/project_1.srcs/sources_1/ip/input_bram/input_bram.xci]
+launch_runs input_bram_synth_1 -jobs 24
+[Mon May  9 14:18:54 2022] Launched input_bram_synth_1...
+Run output will be captured here: /home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/build/project_1.runs/input_bram_synth_1/runme.log
+export_simulation -of_objects [get_files /home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/build/project_1.srcs/sources_1/ip/input_bram/input_bram.xci] -directory /home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/build/project_1.ip_user_files/sim_scripts -ip_user_files_dir /home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/build/project_1.ip_user_files -ipstatic_source_dir /home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/build/project_1.ip_user_files/ipstatic -lib_map_path [list {modelsim=/home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/build/project_1.cache/compile_simlib/modelsim} {questa=/home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/build/project_1.cache/compile_simlib/questa} {ies=/home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/build/project_1.cache/compile_simlib/ies} {xcelium=/home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/build/project_1.cache/compile_simlib/xcelium} {vcs=/home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/build/project_1.cache/compile_simlib/vcs} {riviera=/home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/build/project_1.cache/compile_simlib/riviera}] -use_ip_compiled_libs -force -quiet
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+create_ip -name blk_mem_gen -vendor xilinx.com -library ip -version 8.4 -module_name weight_bram
+set_property -dict [list CONFIG.Component_Name {weight_bram} CONFIG.Memory_Type {Simple_Dual_Port_RAM} CONFIG.Write_Width_A {128} CONFIG.Write_Depth_A {32768} CONFIG.Read_Width_A {128} CONFIG.Operating_Mode_A {NO_CHANGE} CONFIG.Enable_A {Always_Enabled} CONFIG.Write_Width_B {128} CONFIG.Read_Width_B {128} CONFIG.Enable_B {Always_Enabled} CONFIG.Register_PortA_Output_of_Memory_Primitives {false} CONFIG.Register_PortB_Output_of_Memory_Primitives {false} CONFIG.Port_B_Clock {100} CONFIG.Port_B_Enable_Rate {100}] [get_ips weight_bram]
+WARNING: [Vivado 12-3523] Attempt to change 'Component_Name' from 'weight_bram' to 'weight_bram' is not allowed and is ignored.
+generate_target {instantiation_template} [get_files /home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/build/project_1.srcs/sources_1/ip/weight_bram/weight_bram.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'weight_bram'...
+generate_target all [get_files  /home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/build/project_1.srcs/sources_1/ip/weight_bram/weight_bram.xci]
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'weight_bram'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'weight_bram'...
+INFO: [IP_Flow 19-1686] Generating 'Miscellaneous' target for IP 'weight_bram'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'weight_bram'...
+catch { config_ip_cache -export [get_ips -all weight_bram] }
+export_ip_user_files -of_objects [get_files /home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/build/project_1.srcs/sources_1/ip/weight_bram/weight_bram.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] /home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/build/project_1.srcs/sources_1/ip/weight_bram/weight_bram.xci]
+launch_runs weight_bram_synth_1 -jobs 24
+[Mon May  9 14:19:51 2022] Launched weight_bram_synth_1...
+Run output will be captured here: /home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/build/project_1.runs/weight_bram_synth_1/runme.log
+export_simulation -of_objects [get_files /home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/build/project_1.srcs/sources_1/ip/weight_bram/weight_bram.xci] -directory /home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/build/project_1.ip_user_files/sim_scripts -ip_user_files_dir /home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/build/project_1.ip_user_files -ipstatic_source_dir /home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/build/project_1.ip_user_files/ipstatic -lib_map_path [list {modelsim=/home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/build/project_1.cache/compile_simlib/modelsim} {questa=/home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/build/project_1.cache/compile_simlib/questa} {ies=/home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/build/project_1.cache/compile_simlib/ies} {xcelium=/home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/build/project_1.cache/compile_simlib/xcelium} {vcs=/home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/build/project_1.cache/compile_simlib/vcs} {riviera=/home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/build/project_1.cache/compile_simlib/riviera}] -use_ip_compiled_libs -force -quiet
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+create_ip -name blk_mem_gen -vendor xilinx.com -library ip -version 8.4 -module_name output_bram
+set_property -dict [list CONFIG.Component_Name {output_bram} CONFIG.Memory_Type {Simple_Dual_Port_RAM} CONFIG.Write_Width_A {128} CONFIG.Write_Depth_A {65536} CONFIG.Read_Width_A {128} CONFIG.Operating_Mode_A {NO_CHANGE} CONFIG.Enable_A {Always_Enabled} CONFIG.Write_Width_B {128} CONFIG.Read_Width_B {128} CONFIG.Enable_B {Always_Enabled} CONFIG.Register_PortA_Output_of_Memory_Primitives {false} CONFIG.Register_PortB_Output_of_Memory_Primitives {false} CONFIG.Port_B_Clock {100} CONFIG.Port_B_Enable_Rate {100}] [get_ips output_bram]
+WARNING: [Vivado 12-3523] Attempt to change 'Component_Name' from 'output_bram' to 'output_bram' is not allowed and is ignored.
+generate_target {instantiation_template} [get_files /home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/build/project_1.srcs/sources_1/ip/output_bram/output_bram.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'output_bram'...
+generate_target all [get_files  /home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/build/project_1.srcs/sources_1/ip/output_bram/output_bram.xci]
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'output_bram'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'output_bram'...
+INFO: [IP_Flow 19-1686] Generating 'Miscellaneous' target for IP 'output_bram'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'output_bram'...
+catch { config_ip_cache -export [get_ips -all output_bram] }
+export_ip_user_files -of_objects [get_files /home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/build/project_1.srcs/sources_1/ip/output_bram/output_bram.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] /home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/build/project_1.srcs/sources_1/ip/output_bram/output_bram.xci]
+launch_runs output_bram_synth_1 -jobs 24
+[Mon May  9 14:20:41 2022] Launched output_bram_synth_1...
+Run output will be captured here: /home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/build/project_1.runs/output_bram_synth_1/runme.log
+export_simulation -of_objects [get_files /home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/build/project_1.srcs/sources_1/ip/output_bram/output_bram.xci] -directory /home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/build/project_1.ip_user_files/sim_scripts -ip_user_files_dir /home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/build/project_1.ip_user_files -ipstatic_source_dir /home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/build/project_1.ip_user_files/ipstatic -lib_map_path [list {modelsim=/home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/build/project_1.cache/compile_simlib/modelsim} {questa=/home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/build/project_1.cache/compile_simlib/questa} {ies=/home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/build/project_1.cache/compile_simlib/ies} {xcelium=/home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/build/project_1.cache/compile_simlib/xcelium} {vcs=/home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/build/project_1.cache/compile_simlib/vcs} {riviera=/home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/build/project_1.cache/compile_simlib/riviera}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+launch_runs synth_1 -jobs 24
+[Mon May  9 14:21:01 2022] Launched synth_1...
+Run output will be captured here: /home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/build/project_1.runs/synth_1/runme.log
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7a200tsbg484-1
+INFO: [Device 21-403] Loading part xc7a200tsbg484-1
+Netlist sorting complete. Time (s): cpu = 00:00:00.18 ; elapsed = 00:00:00.06 . Memory (MB): peak = 7615.984 ; gain = 0.000 ; free physical = 2985 ; free virtual = 107366
+INFO: [Netlist 29-17] Analyzing 736 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2020.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [/home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/constraint/Nexys-Video_Master.xdc]
+WARNING: [Vivado 12-584] No ports matched 'rstn'. [/home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/constraint/Nexys-Video_Master.xdc:162]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/constraint/Nexys-Video_Master.xdc:162]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [/home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/constraint/Nexys-Video_Master.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 7620.992 ; gain = 0.000 ; free physical = 2926 ; free virtual = 107308
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:52 ; elapsed = 00:00:19 . Memory (MB): peak = 7961.988 ; gain = 346.004 ; free physical = 4344 ; free virtual = 108728
+set_property top top [current_fileset]
+update_compile_order -fileset sources_1
+close_design
+reset_run synth_1
+launch_runs synth_1 -jobs 24
+[Mon May  9 14:24:25 2022] Launched synth_1...
+Run output will be captured here: /home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/build/project_1.runs/synth_1/runme.log
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7a200tsbg484-1
+INFO: [Project 1-454] Reading design checkpoint '/home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/build/project_1.srcs/sources_1/ip/NIT_bram/NIT_bram.dcp' for cell 'u_NIT'
+INFO: [Project 1-454] Reading design checkpoint '/home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/build/project_1.srcs/sources_1/ip/PFT_partial_bram/PFT_partial_bram.dcp' for cell 'u_PFT/genblk1[0].PFT_bank'
+INFO: [Project 1-454] Reading design checkpoint '/home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/build/project_1.srcs/sources_1/ip/input_bram/input_bram.dcp' for cell 'u_global_buffer/u_input_bram'
+INFO: [Project 1-454] Reading design checkpoint '/home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/build/project_1.srcs/sources_1/ip/output_bram/output_bram.dcp' for cell 'u_global_buffer/u_output_bram'
+INFO: [Project 1-454] Reading design checkpoint '/home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/build/project_1.srcs/sources_1/ip/weight_bram/weight_bram.dcp' for cell 'u_global_buffer/u_weight_bram'
+Netlist sorting complete. Time (s): cpu = 00:00:00.88 ; elapsed = 00:00:00.86 . Memory (MB): peak = 8204.809 ; gain = 0.000 ; free physical = 3479 ; free virtual = 107942
+INFO: [Netlist 29-17] Analyzing 7202 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2020.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [/home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/constraint/Nexys-Video_Master.xdc]
+Finished Parsing XDC File [/home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/constraint/Nexys-Video_Master.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 8300.203 ; gain = 0.000 ; free physical = 4951 ; free virtual = 109415
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:19 ; elapsed = 00:00:23 . Memory (MB): peak = 8377.867 ; gain = 173.059 ; free physical = 4852 ; free virtual = 109316
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 8 CPUs
+report_timing_summary: Time (s): cpu = 00:00:25 ; elapsed = 00:00:07 . Memory (MB): peak = 8670.008 ; gain = 88.148 ; free physical = 4560 ; free virtual = 109046
+close_design
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+reset_run synth_1
+launch_runs synth_1 -jobs 24
+[Mon May  9 15:07:36 2022] Launched synth_1...
+Run output will be captured here: /home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/build/project_1.runs/synth_1/runme.log
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7a200tsbg484-1
+INFO: [Project 1-454] Reading design checkpoint '/home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/build/project_1.srcs/sources_1/ip/NIT_bram/NIT_bram.dcp' for cell 'u_NIT'
+INFO: [Project 1-454] Reading design checkpoint '/home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/build/project_1.srcs/sources_1/ip/PFT_partial_bram/PFT_partial_bram.dcp' for cell 'u_PFT/genblk1[0].PFT_bank'
+INFO: [Project 1-454] Reading design checkpoint '/home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/build/project_1.srcs/sources_1/ip/input_bram/input_bram.dcp' for cell 'u_global_buffer/u_input_bram'
+INFO: [Project 1-454] Reading design checkpoint '/home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/build/project_1.srcs/sources_1/ip/output_bram/output_bram.dcp' for cell 'u_global_buffer/u_output_bram'
+INFO: [Project 1-454] Reading design checkpoint '/home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/build/project_1.srcs/sources_1/ip/weight_bram/weight_bram.dcp' for cell 'u_global_buffer/u_weight_bram'
+Netlist sorting complete. Time (s): cpu = 00:00:00.91 ; elapsed = 00:00:00.88 . Memory (MB): peak = 8719.660 ; gain = 0.000 ; free physical = 4236 ; free virtual = 108862
+INFO: [Netlist 29-17] Analyzing 7298 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2020.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [/home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/constraint/Nexys-Video_Master.xdc]
+Finished Parsing XDC File [/home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/constraint/Nexys-Video_Master.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 8719.660 ; gain = 0.000 ; free physical = 4103 ; free virtual = 108730
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:19 ; elapsed = 00:00:24 . Memory (MB): peak = 8719.660 ; gain = 0.000 ; free physical = 4115 ; free virtual = 108742
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 8 CPUs
+report_timing_summary: Time (s): cpu = 00:00:25 ; elapsed = 00:00:07 . Memory (MB): peak = 8893.742 ; gain = 0.000 ; free physical = 3956 ; free virtual = 108586
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+add_files -fileset sim_1 -norecurse /home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/tb/tb_controls.v
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+reset_run synth_1
+launch_runs synth_1 -jobs 24
+[Mon May  9 15:31:34 2022] Launched synth_1...
+Run output will be captured here: /home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/build/project_1.runs/synth_1/runme.log
+close_design
+reset_run synth_1
+launch_runs synth_1 -jobs 24
+[Mon May  9 15:38:14 2022] Launched synth_1...
+Run output will be captured here: /home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/build/project_1.runs/synth_1/runme.log
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7a200tsbg484-1
+INFO: [Project 1-454] Reading design checkpoint '/home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/build/project_1.srcs/sources_1/ip/NIT_bram/NIT_bram.dcp' for cell 'u_NIT'
+INFO: [Project 1-454] Reading design checkpoint '/home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/build/project_1.srcs/sources_1/ip/PFT_partial_bram/PFT_partial_bram.dcp' for cell 'u_PFT/genblk1[0].PFT_bank'
+INFO: [Project 1-454] Reading design checkpoint '/home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/build/project_1.srcs/sources_1/ip/input_bram/input_bram.dcp' for cell 'u_global_buffer/u_input_bram'
+INFO: [Project 1-454] Reading design checkpoint '/home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/build/project_1.srcs/sources_1/ip/output_bram/output_bram.dcp' for cell 'u_global_buffer/u_output_bram'
+INFO: [Project 1-454] Reading design checkpoint '/home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/build/project_1.srcs/sources_1/ip/weight_bram/weight_bram.dcp' for cell 'u_global_buffer/u_weight_bram'
+Netlist sorting complete. Time (s): cpu = 00:00:00.98 ; elapsed = 00:00:00.96 . Memory (MB): peak = 8923.301 ; gain = 0.000 ; free physical = 2779 ; free virtual = 108505
+INFO: [Netlist 29-17] Analyzing 7090 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2020.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [/home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/constraint/Nexys-Video_Master.xdc]
+Finished Parsing XDC File [/home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/constraint/Nexys-Video_Master.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 8923.301 ; gain = 0.000 ; free physical = 1595 ; free virtual = 108380
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:19 ; elapsed = 00:00:25 . Memory (MB): peak = 8923.301 ; gain = 0.000 ; free physical = 1545 ; free virtual = 108388
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 8 CPUs
+report_timing_summary: Time (s): cpu = 00:00:24 ; elapsed = 00:00:06 . Memory (MB): peak = 9010.336 ; gain = 0.000 ; free physical = 1376 ; free virtual = 108222
+close [ open /home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/src/OR32.v w ]
+add_files /home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/src/OR32.v
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+close_design
+launch_runs synth_1 -jobs 24
+[Mon May  9 15:56:44 2022] Launched synth_1...
+Run output will be captured here: /home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/build/project_1.runs/synth_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 24
+[Mon May  9 15:59:06 2022] Launched synth_1...
+Run output will be captured here: /home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/build/project_1.runs/synth_1/runme.log
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7a200tsbg484-1
+INFO: [Project 1-454] Reading design checkpoint '/home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/build/project_1.srcs/sources_1/ip/NIT_bram/NIT_bram.dcp' for cell 'u_NIT'
+INFO: [Project 1-454] Reading design checkpoint '/home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/build/project_1.srcs/sources_1/ip/PFT_partial_bram/PFT_partial_bram.dcp' for cell 'u_PFT/genblk1[0].PFT_bank'
+INFO: [Project 1-454] Reading design checkpoint '/home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/build/project_1.srcs/sources_1/ip/input_bram/input_bram.dcp' for cell 'u_global_buffer/u_input_bram'
+INFO: [Project 1-454] Reading design checkpoint '/home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/build/project_1.srcs/sources_1/ip/output_bram/output_bram.dcp' for cell 'u_global_buffer/u_output_bram'
+INFO: [Project 1-454] Reading design checkpoint '/home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/build/project_1.srcs/sources_1/ip/weight_bram/weight_bram.dcp' for cell 'u_global_buffer/u_weight_bram'
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.96 . Memory (MB): peak = 9083.672 ; gain = 0.000 ; free physical = 2242 ; free virtual = 108248
+INFO: [Netlist 29-17] Analyzing 7090 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2020.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [/home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/constraint/Nexys-Video_Master.xdc]
+Finished Parsing XDC File [/home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/constraint/Nexys-Video_Master.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 9083.672 ; gain = 0.000 ; free physical = 2122 ; free virtual = 108128
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:20 ; elapsed = 00:00:25 . Memory (MB): peak = 9083.672 ; gain = 0.000 ; free physical = 2166 ; free virtual = 108172
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 8 CPUs
+report_timing_summary: Time (s): cpu = 00:00:23 ; elapsed = 00:00:06 . Memory (MB): peak = 9187.723 ; gain = 0.000 ; free physical = 2014 ; free virtual = 108021
+close_design
+reset_run synth_1
+launch_runs synth_1 -jobs 24
+[Mon May  9 16:21:27 2022] Launched synth_1...
+Run output will be captured here: /home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/build/project_1.runs/synth_1/runme.log
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7a200tsbg484-1
+INFO: [Project 1-454] Reading design checkpoint '/home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/build/project_1.srcs/sources_1/ip/NIT_bram/NIT_bram.dcp' for cell 'u_NIT'
+INFO: [Project 1-454] Reading design checkpoint '/home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/build/project_1.srcs/sources_1/ip/PFT_partial_bram/PFT_partial_bram.dcp' for cell 'u_PFT/genblk1[0].PFT_bank'
+INFO: [Project 1-454] Reading design checkpoint '/home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/build/project_1.srcs/sources_1/ip/input_bram/input_bram.dcp' for cell 'u_global_buffer/u_input_bram'
+INFO: [Project 1-454] Reading design checkpoint '/home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/build/project_1.srcs/sources_1/ip/output_bram/output_bram.dcp' for cell 'u_global_buffer/u_output_bram'
+INFO: [Project 1-454] Reading design checkpoint '/home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/build/project_1.srcs/sources_1/ip/weight_bram/weight_bram.dcp' for cell 'u_global_buffer/u_weight_bram'
+Netlist sorting complete. Time (s): cpu = 00:00:00.99 ; elapsed = 00:00:00.95 . Memory (MB): peak = 9187.723 ; gain = 0.000 ; free physical = 2186 ; free virtual = 108013
+INFO: [Netlist 29-17] Analyzing 7090 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2020.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [/home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/constraint/Nexys-Video_Master.xdc]
+Finished Parsing XDC File [/home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/constraint/Nexys-Video_Master.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 9187.723 ; gain = 0.000 ; free physical = 2081 ; free virtual = 107907
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:19 ; elapsed = 00:00:25 . Memory (MB): peak = 9187.723 ; gain = 0.000 ; free physical = 2139 ; free virtual = 107966
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 8 CPUs
+report_timing_summary: Time (s): cpu = 00:00:24 ; elapsed = 00:00:06 . Memory (MB): peak = 9246.688 ; gain = 0.000 ; free physical = 1957 ; free virtual = 107784
+close_design
+reset_run synth_1
+launch_runs synth_1 -jobs 24
+[Mon May  9 16:33:29 2022] Launched synth_1...
+Run output will be captured here: /home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/build/project_1.runs/synth_1/runme.log
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7a200tsbg484-1
+INFO: [Project 1-454] Reading design checkpoint '/home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/build/project_1.srcs/sources_1/ip/NIT_bram/NIT_bram.dcp' for cell 'u_NIT'
+INFO: [Project 1-454] Reading design checkpoint '/home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/build/project_1.srcs/sources_1/ip/PFT_partial_bram/PFT_partial_bram.dcp' for cell 'u_PFT/genblk1[0].PFT_bank'
+INFO: [Project 1-454] Reading design checkpoint '/home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/build/project_1.srcs/sources_1/ip/input_bram/input_bram.dcp' for cell 'u_global_buffer/u_input_bram'
+INFO: [Project 1-454] Reading design checkpoint '/home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/build/project_1.srcs/sources_1/ip/output_bram/output_bram.dcp' for cell 'u_global_buffer/u_output_bram'
+INFO: [Project 1-454] Reading design checkpoint '/home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/build/project_1.srcs/sources_1/ip/weight_bram/weight_bram.dcp' for cell 'u_global_buffer/u_weight_bram'
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.96 . Memory (MB): peak = 9246.688 ; gain = 0.000 ; free physical = 2195 ; free virtual = 107908
+INFO: [Netlist 29-17] Analyzing 7090 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2020.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [/home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/constraint/Nexys-Video_Master.xdc]
+Finished Parsing XDC File [/home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/constraint/Nexys-Video_Master.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 9246.688 ; gain = 0.000 ; free physical = 2095 ; free virtual = 107808
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:19 ; elapsed = 00:00:25 . Memory (MB): peak = 9246.688 ; gain = 0.000 ; free physical = 2088 ; free virtual = 107802
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 8 CPUs
+report_timing_summary: Time (s): cpu = 00:00:24 ; elapsed = 00:00:06 . Memory (MB): peak = 9313.512 ; gain = 0.000 ; free physical = 1930 ; free virtual = 107644
+close_design
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+set_property -dict [list CONFIG.Register_PortB_Output_of_Memory_Primitives {true} CONFIG.Register_PortB_Output_of_Memory_Core {false}] [get_ips weight_bram]
+generate_target all [get_files  /home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/build/project_1.srcs/sources_1/ip/weight_bram/weight_bram.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'weight_bram'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'weight_bram'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'weight_bram'...
+INFO: [IP_Flow 19-1686] Generating 'Miscellaneous' target for IP 'weight_bram'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'weight_bram'...
+catch { config_ip_cache -export [get_ips -all weight_bram] }
+export_ip_user_files -of_objects [get_files /home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/build/project_1.srcs/sources_1/ip/weight_bram/weight_bram.xci] -no_script -sync -force -quiet
+reset_run weight_bram_synth_1
+launch_runs weight_bram_synth_1 -jobs 24
+[Mon May  9 16:41:15 2022] Launched weight_bram_synth_1...
+Run output will be captured here: /home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/build/project_1.runs/weight_bram_synth_1/runme.log
+export_simulation -of_objects [get_files /home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/build/project_1.srcs/sources_1/ip/weight_bram/weight_bram.xci] -directory /home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/build/project_1.ip_user_files/sim_scripts -ip_user_files_dir /home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/build/project_1.ip_user_files -ipstatic_source_dir /home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/build/project_1.ip_user_files/ipstatic -lib_map_path [list {modelsim=/home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/build/project_1.cache/compile_simlib/modelsim} {questa=/home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/build/project_1.cache/compile_simlib/questa} {ies=/home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/build/project_1.cache/compile_simlib/ies} {xcelium=/home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/build/project_1.cache/compile_simlib/xcelium} {vcs=/home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/build/project_1.cache/compile_simlib/vcs} {riviera=/home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/build/project_1.cache/compile_simlib/riviera}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+launch_runs synth_1 -jobs 24
+[Mon May  9 16:41:25 2022] Launched weight_bram_synth_1...
+Run output will be captured here: /home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/build/project_1.runs/weight_bram_synth_1/runme.log
+[Mon May  9 16:41:25 2022] Launched synth_1...
+Run output will be captured here: /home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/build/project_1.runs/synth_1/runme.log
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7a200tsbg484-1
+INFO: [Project 1-454] Reading design checkpoint '/home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/build/project_1.srcs/sources_1/ip/NIT_bram/NIT_bram.dcp' for cell 'u_NIT'
+INFO: [Project 1-454] Reading design checkpoint '/home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/build/project_1.srcs/sources_1/ip/PFT_partial_bram/PFT_partial_bram.dcp' for cell 'u_PFT/genblk1[0].PFT_bank'
+INFO: [Project 1-454] Reading design checkpoint '/home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/build/project_1.srcs/sources_1/ip/input_bram/input_bram.dcp' for cell 'u_global_buffer/u_input_bram'
+INFO: [Project 1-454] Reading design checkpoint '/home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/build/project_1.srcs/sources_1/ip/output_bram/output_bram.dcp' for cell 'u_global_buffer/u_output_bram'
+INFO: [Project 1-454] Reading design checkpoint '/home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/build/project_1.srcs/sources_1/ip/weight_bram/weight_bram.dcp' for cell 'u_global_buffer/u_weight_bram'
+Netlist sorting complete. Time (s): cpu = 00:00:03 ; elapsed = 00:00:00.98 . Memory (MB): peak = 9313.512 ; gain = 0.000 ; free physical = 2190 ; free virtual = 106196
+INFO: [Netlist 29-17] Analyzing 7090 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2020.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [/home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/constraint/Nexys-Video_Master.xdc]
+Finished Parsing XDC File [/home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/constraint/Nexys-Video_Master.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.01 . Memory (MB): peak = 9313.512 ; gain = 0.000 ; free physical = 2090 ; free virtual = 106098
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:01:11 ; elapsed = 00:00:28 . Memory (MB): peak = 9313.512 ; gain = 0.000 ; free physical = 3503 ; free virtual = 107510
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 8 CPUs
+report_timing_summary: Time (s): cpu = 00:00:23 ; elapsed = 00:00:06 . Memory (MB): peak = 9399.344 ; gain = 0.000 ; free physical = 3260 ; free virtual = 107268
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+set_property -dict [list CONFIG.Register_PortB_Output_of_Memory_Primitives {true}] [get_ips input_bram]
+generate_target all [get_files  /home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/build/project_1.srcs/sources_1/ip/input_bram/input_bram.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'input_bram'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'input_bram'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'input_bram'...
+INFO: [IP_Flow 19-1686] Generating 'Miscellaneous' target for IP 'input_bram'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'input_bram'...
+catch { config_ip_cache -export [get_ips -all input_bram] }
+export_ip_user_files -of_objects [get_files /home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/build/project_1.srcs/sources_1/ip/input_bram/input_bram.xci] -no_script -sync -force -quiet
+reset_run input_bram_synth_1
+launch_runs input_bram_synth_1 -jobs 24
+[Mon May  9 16:48:40 2022] Launched input_bram_synth_1...
+Run output will be captured here: /home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/build/project_1.runs/input_bram_synth_1/runme.log
+export_simulation -of_objects [get_files /home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/build/project_1.srcs/sources_1/ip/input_bram/input_bram.xci] -directory /home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/build/project_1.ip_user_files/sim_scripts -ip_user_files_dir /home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/build/project_1.ip_user_files -ipstatic_source_dir /home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/build/project_1.ip_user_files/ipstatic -lib_map_path [list {modelsim=/home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/build/project_1.cache/compile_simlib/modelsim} {questa=/home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/build/project_1.cache/compile_simlib/questa} {ies=/home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/build/project_1.cache/compile_simlib/ies} {xcelium=/home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/build/project_1.cache/compile_simlib/xcelium} {vcs=/home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/build/project_1.cache/compile_simlib/vcs} {riviera=/home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/build/project_1.cache/compile_simlib/riviera}] -use_ip_compiled_libs -force -quiet
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+set_property -dict [list CONFIG.Register_PortB_Output_of_Memory_Primitives {true}] [get_ips output_bram]
+generate_target all [get_files  /home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/build/project_1.srcs/sources_1/ip/output_bram/output_bram.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'output_bram'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'output_bram'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'output_bram'...
+INFO: [IP_Flow 19-1686] Generating 'Miscellaneous' target for IP 'output_bram'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'output_bram'...
+catch { config_ip_cache -export [get_ips -all output_bram] }
+export_ip_user_files -of_objects [get_files /home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/build/project_1.srcs/sources_1/ip/output_bram/output_bram.xci] -no_script -sync -force -quiet
+reset_run output_bram_synth_1
+launch_runs output_bram_synth_1 -jobs 24
+[Mon May  9 16:49:20 2022] Launched output_bram_synth_1...
+Run output will be captured here: /home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/build/project_1.runs/output_bram_synth_1/runme.log
+export_simulation -of_objects [get_files /home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/build/project_1.srcs/sources_1/ip/output_bram/output_bram.xci] -directory /home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/build/project_1.ip_user_files/sim_scripts -ip_user_files_dir /home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/build/project_1.ip_user_files -ipstatic_source_dir /home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/build/project_1.ip_user_files/ipstatic -lib_map_path [list {modelsim=/home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/build/project_1.cache/compile_simlib/modelsim} {questa=/home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/build/project_1.cache/compile_simlib/questa} {ies=/home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/build/project_1.cache/compile_simlib/ies} {xcelium=/home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/build/project_1.cache/compile_simlib/xcelium} {vcs=/home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/build/project_1.cache/compile_simlib/vcs} {riviera=/home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/build/project_1.cache/compile_simlib/riviera}] -use_ip_compiled_libs -force -quiet
+close_design
+reset_run synth_1
+launch_runs synth_1 -jobs 24
+[Mon May  9 16:49:46 2022] Launched input_bram_synth_1, output_bram_synth_1...
+Run output will be captured here:
+input_bram_synth_1: /home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/build/project_1.runs/input_bram_synth_1/runme.log
+output_bram_synth_1: /home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/build/project_1.runs/output_bram_synth_1/runme.log
+[Mon May  9 16:49:46 2022] Launched synth_1...
+Run output will be captured here: /home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/build/project_1.runs/synth_1/runme.log
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7a200tsbg484-1
+INFO: [Project 1-454] Reading design checkpoint '/home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/build/project_1.srcs/sources_1/ip/NIT_bram/NIT_bram.dcp' for cell 'u_NIT'
+INFO: [Project 1-454] Reading design checkpoint '/home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/build/project_1.srcs/sources_1/ip/PFT_partial_bram/PFT_partial_bram.dcp' for cell 'u_PFT/genblk1[0].PFT_bank'
+INFO: [Project 1-454] Reading design checkpoint '/home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/build/project_1.srcs/sources_1/ip/input_bram/input_bram.dcp' for cell 'u_global_buffer/u_input_bram'
+INFO: [Project 1-454] Reading design checkpoint '/home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/build/project_1.srcs/sources_1/ip/output_bram/output_bram.dcp' for cell 'u_global_buffer/u_output_bram'
+INFO: [Project 1-454] Reading design checkpoint '/home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/build/project_1.srcs/sources_1/ip/weight_bram/weight_bram.dcp' for cell 'u_global_buffer/u_weight_bram'
+Netlist sorting complete. Time (s): cpu = 00:00:03 ; elapsed = 00:00:01 . Memory (MB): peak = 9449.570 ; gain = 0.000 ; free physical = 4881 ; free virtual = 105967
+INFO: [Netlist 29-17] Analyzing 7090 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2020.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [/home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/constraint/Nexys-Video_Master.xdc]
+Finished Parsing XDC File [/home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/constraint/Nexys-Video_Master.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.01 . Memory (MB): peak = 9449.570 ; gain = 0.000 ; free physical = 4788 ; free virtual = 105874
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:01:10 ; elapsed = 00:00:28 . Memory (MB): peak = 9449.570 ; gain = 0.000 ; free physical = 6267 ; free virtual = 107352
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 8 CPUs
+report_timing_summary: Time (s): cpu = 00:00:24 ; elapsed = 00:00:07 . Memory (MB): peak = 9523.605 ; gain = 0.000 ; free physical = 5591 ; free virtual = 106677
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon May  9 16:59:04 2022...

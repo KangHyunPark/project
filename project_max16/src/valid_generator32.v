@@ -7,8 +7,69 @@ module valid_generator32
     output wire [31:0] dout
 
     );
+    wire [31:0] input1 [31:0];
+    wire [31:0] input2 [15:0];
+    wire [31:0] input3 [7:0];
+    wire [31:0] input4 [3:0];
+    wire [31:0] input5 [1:0];
     
+    genvar i;
+    generate
+		for(i=0; i<=31; i=i+1) begin
+		  assign input1[i] = din[(32*i)+:32];
+		end	
+    endgenerate
+    
+	generate
+		for(i=0; i<=15; i=i+1) begin
+			OR32 OR1 (
+			     .in_a(input1[2*i]),
+			     .in_b(input1[2*i+1]),
+			     
+			     .out(input2[i])
+			);
+        end
+    endgenerate
+    
+    generate
+		for(i=0; i<=7; i=i+1) begin
+			OR32 OR2 (
+			     .in_a(input2[2*i]),
+			     .in_b(input2[2*i+1]),
+			     
+			     .out(input3[i])
+			);
+        end
+    endgenerate   
+    
+    generate
+		for(i=0; i<=3; i=i+1) begin
+			OR32 OR3 (
+			     .in_a(input3[2*i]),
+			     .in_b(input3[2*i+1]),
+			     
+			     .out(input4[i])
+			);
+        end
+    endgenerate               
 
-    assign dout = din[31:0] | din[63:32] | din[95:64] | din[127:96] | din[159:128] | din[191:160] | din[223:192] | din[255:224] | din[287:256] | din[319:288] | din[351:320] | din[383:352] | din[415:384] | din[447:416] | din[479:448] | din[511:480] | din[543:512] | din[575:544] | din[607:576] | din[639:608] | din[671:640] | din[703:672] | din[735:704] | din[767:736] | din[799:768] | din[831:800] | din[863:832] | din[895:864] | din[927:896] | din[959:928] | din[991:960] | din[1023:992];
+	generate
+		for(i=0; i<=1; i=i+1) begin
+			OR32 OR4 (
+			     .in_a(input4[2*i]),
+			     .in_b(input4[2*i+1]),
+			     
+			     .out(input5[i])
+			);
+        end
+    endgenerate   
+    
+    OR32 OR5 (
+         .in_a(input5[0]),
+         .in_b(input5[1]),
+         
+         .out(dout)
+    );
+ 
 
 endmodule

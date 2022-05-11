@@ -15,7 +15,7 @@
     parameter microaddr_width = 5,
    
     parameter global_buf_addr_width = 17,
-    parameter OUTPUT_DATA_WIDTH = 24
+    parameter OUTPUT_DATA_WIDTH = 20
     )
 (
     input wire clk,
@@ -57,9 +57,12 @@
     wire [global_buf_addr_width-1:0] input_weight_addr;
     wire [global_buf_addr_width-1:0] output_addr;
     wire save;
+    wire save_buf;
     wire load_weight;
+    wire load_weight_buf;
     wire first_partial;
 	wire [PE_ROW-1:0] enable_systolic;
+	wire [PE_ROW-1:0] enable_systolic_buf;
 	
 	wire write_GB;
 	wire write_GB_temp;
@@ -165,8 +168,8 @@
 		.rstn(rstn),
 		.in_a_bus(in_a_bus),
 		.in_b_bus(b_buf_out), 
-		.enable(enable_systolic),
-		.save(save),
+		.enable(enable_systolic_buf),
+		.save(save_buf),
 		
 		.out_a_bus(out_a_bus), // for debugging
 		.out_b_bus(out_b_bus)
@@ -284,6 +287,35 @@
         .dout(load_PFT_buf)
     );
     
+    delay_unit # (
+        .DATA_WIDTH(1),
+        .delay(2)
+    ) u_delay_unit_save (
+        .clk(clk),
+        .din(save),
+            
+        .dout(save_buf)
+    );
+    
+    delay_unit # (
+        .DATA_WIDTH(PE_ROW),
+        .delay(2)
+    ) u_delay_unit_enable_systolic (
+        .clk(clk),
+        .din(enable_systolic),
+            
+        .dout(enable_systolic_buf)
+    );
+    
+    delay_unit # (
+        .DATA_WIDTH(1),
+        .delay(2)
+    ) u_delay_unit_load_weight (
+        .clk(clk),
+        .din(load_weight),
+            
+        .dout(load_weight_buf)
+    );
     address_generator #(
         .input_width((NIT_neighbor+1)*NIT_point_index),
         .bank(PFT_bank),
@@ -345,7 +377,7 @@
 		.done(aggregation_done)
 	);
 	
-	assign in_a_bus = load_weight ? dout_a : a_buf_out;
+	assign in_a_bus = load_weight_buf ? dout_a : a_buf_out;
     assign b_buf_in = first_partial ? {128{1'b0}} : dout_b;
 	assign din = is_aggregation ? subtract_module_dout : din_temp;
     assign din_temp = load_data ? GB_data_line : systolic_result;

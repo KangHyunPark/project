@@ -5,7 +5,7 @@ module systolic_row
     parameter integer PE_NUM = 16,
     parameter integer INPUT_DATA_WIDTH = 8,
     parameter integer WEIGHT_DATA_WIDTH = 8,
-    parameter integer OUTPUT_DATA_WIDTH = 24
+    parameter integer OUTPUT_DATA_WIDTH = 20
     )
 (
     input wire clk,

@@ -1,7 +1,7 @@
 
 module global_buffer
 #(
-    parameter integer addr_width = 17, // 적당히 바꾸기 : 상위 비트는 bank 선택
+    parameter integer addr_width = 17, // ?????? ?????? : ???? ?????? bank ????
     parameter integer data_width = 128
     )
 (   
@@ -12,12 +12,14 @@ module global_buffer
 	input wire [data_width-1:0] din,
 	input wire write,
 	
-	output wire [data_width-1:0] dout_a,
-	output wire [data_width-1:0] dout_b
+	output reg [data_width-1:0] dout_a,
+	output reg [data_width-1:0] dout_b
     );
     
     reg [addr_width-1:0] raddr_a_buf;
 	reg [addr_width-1:0] raddr_b_buf;
+    reg [addr_width-1:0] raddr_a_buf2;
+	reg [addr_width-1:0] raddr_b_buf2;
     
     wire [14:0] input_raddr;
     wire [14:0] weight_raddr;
@@ -36,10 +38,42 @@ module global_buffer
 	wire [data_width-1:0] output_dout;
 	
 	always @(posedge clk) begin
-	   raddr_a_buf <= raddr_a;
-	   raddr_b_buf <= raddr_b;
+	   raddr_a_buf <= raddr_a_buf2;
+	   raddr_b_buf <= raddr_b_buf2;
+	   raddr_a_buf2 <= raddr_a;
+	   raddr_b_buf2 <= raddr_b;
 	end
-    
+	
+	always @(posedge clk) begin
+	   if(raddr_a_buf[16] == 1'b1) begin
+	       dout_a <= output_dout;
+	   end
+	   else if(raddr_a_buf[15] == 1'b1) begin
+	       dout_a <= weight_dout;
+	   end
+	   else if(raddr_a_buf[15] == 1'b0) begin
+	       dout_a <= input_dout;
+	   end
+	   else begin
+	       dout_a <= {(data_width){1'b0}};
+	   end
+	end
+	
+	always @(posedge clk) begin
+	   if(raddr_b_buf[16] == 1'b1) begin
+	       dout_b <= output_dout;
+	   end
+	   else if(raddr_b_buf[15] == 1'b1) begin
+	       dout_b <= weight_dout;
+	   end
+	   else if(raddr_b_buf[15] == 1'b0) begin
+	       dout_b <= input_dout;
+	   end
+	   else begin
+	       dout_b <= {(data_width){1'b0}};
+	   end
+	end
+	
     assign input_raddr = (raddr_a[16:15] == 2'b00) ? raddr_a[14:0] : ((raddr_b[16:15] == 2'b00) ? raddr_b[14:0] : {14{1'b0}}); 
     assign input_waddr = (waddr[16:15] == 2'b00) ? waddr[14:0] : {14{1'b0}};
     
@@ -53,8 +87,8 @@ module global_buffer
     assign weight_write = (waddr[16:15] == 2'b01) ? write : 1'b0;
     assign output_write = (waddr[16] == 1'b1) ? write : 1'b0;
     
-    assign dout_a = (raddr_a_buf[16] == 1'b1) ? output_dout : ((raddr_a_buf[15] == 1'b1) ? weight_dout : ((raddr_a_buf[15] == 1'b0) ? input_dout : {(data_width){1'b0}})); 
-    assign dout_b = (raddr_b_buf[16] == 1'b1) ? output_dout : ((raddr_b_buf[15] == 1'b1) ? weight_dout : ((raddr_b_buf[15] == 1'b0) ? input_dout : {(data_width){1'b0}}));
+    //assign dout_a = (raddr_a_buf[16] == 1'b1) ? output_dout : ((raddr_a_buf[15] == 1'b1) ? weight_dout : ((raddr_a_buf[15] == 1'b0) ? input_dout : {(data_width){1'b0}})); 
+    //assign dout_b = (raddr_b_buf[16] == 1'b1) ? output_dout : ((raddr_b_buf[15] == 1'b1) ? weight_dout : ((raddr_b_buf[15] == 1'b0) ? input_dout : {(data_width){1'b0}}));
 
     
     input_bram u_input_bram (

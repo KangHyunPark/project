@@ -13,7 +13,7 @@ module PFT_bram
     input wire [(PFT_bank-1):0] write,
     input wire [PFT_addr_width-1:0] PFT_waddr,
     input wire [(PFT_data_width*PE_COL)-1:0] din,
-    input wire [(PFT_bank-1):0] valid, // bank º±≈√
+    input wire [(PFT_bank-1):0] valid, // bank ????
     input wire is_centroid,
     
     output wire [(PFT_bank*PFT_data_width*PE_COL)-1:0] dout
@@ -73,6 +73,7 @@ module PFT_bram
 	assign dout = is_centroid ? centroid : dout_temp3;
 	
 	encoder32x5 u_encoder32x5 (
+	   .clk(clk),
 	   .din(valid),
 	   
 	   .dout(centroid_bank)

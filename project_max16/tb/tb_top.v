@@ -18,7 +18,7 @@ module tb_top;
     parameter microaddr_width = 5;
    
     parameter global_buf_addr_width = 17;
-    parameter OUTPUT_DATA_WIDTH = 24;
+    parameter OUTPUT_DATA_WIDTH = 20;
     
     reg clk;
     reg rstn;
@@ -38,8 +38,8 @@ module tb_top;
     
     reg flag;
     
-    reg [DATA_WIDTH*length-1:0] GB_data_input [0:16383];
-    reg [DATA_WIDTH*length-1:0] GB_data_weight [0:1023];
+    reg [DATA_WIDTH*length-1:0] GB_data_input [0:32767];
+    reg [DATA_WIDTH*length-1:0] GB_data_weight [0:8191];
     reg [DATA_WIDTH*length-1:0] GB_data_line;
     
     reg [(NIT_neighbor+1)*NIT_point_index-1:0] NIT_data [0:4095];
@@ -48,6 +48,8 @@ module tb_top;
     wire done;
     
     integer i;
+    integer input_feature_length;
+    integer output_feature_length;
         
     initial clk = 1'b1;
     always #HALF_CLK_PERIOD clk = ~clk;
@@ -58,7 +60,9 @@ module tb_top;
         INIT_OUTPUT_ADDR <= {1'b1,{(global_buf_addr_width-1){1'b0}}};
         N_SAMPLE <= 13'd1024;
         INPUT_FEATURE_LENGTH <= 13'd256;
+        input_feature_length = 256;
         OUTPUT_FEATURE_LENGTH <= 13'd64;
+        output_feature_length = 64;
 
         rstn <= 1'b0;
         flag <= 1'b1;
@@ -108,7 +112,7 @@ module tb_top;
         
         waddr_external <= INIT_INPUT_ADDR;
         
-        for(i=0; i<16384; i=i+1) begin
+        for(i=0; i < 64*input_feature_length; i=i+1) begin
             @(posedge clk) begin
                 if(!flag) begin
                     waddr_external <= waddr_external+1;
@@ -126,7 +130,7 @@ module tb_top;
         waddr_external <= INIT_WEIGHT_ADDR;
         flag <= 1'b1;
         
-        for(i=0; i<1024; i=i+1) begin
+        for(i=0; i < input_feature_length*output_feature_length/16 ; i=i+1) begin
             @(posedge clk) begin
                 if(!flag) begin
                     waddr_external <= waddr_external+1;

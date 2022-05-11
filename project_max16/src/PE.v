@@ -4,15 +4,15 @@ module PE
 #(
     parameter integer INPUT_DATA_WIDTH = 8,
     parameter integer WEIGHT_DATA_WIDTH = 8,
-    parameter integer OUTPUT_DATA_WIDTH = 24
+    parameter integer OUTPUT_DATA_WIDTH = 20
     ) 
 (
     input wire clk, 
     input wire rstn,
-    input wire signed [(INPUT_DATA_WIDTH-1):0] in_a, // weight 저장 혹은 feature 이동
-    input wire signed [(OUTPUT_DATA_WIDTH-1):0] in_b, // partial sum 이동
-	input wire enable, // PE 켜기 - input이 순차적으로 들어올때 enable도 순차적으로 켜줄것!
-	input wire save, // weight 저장
+    input wire signed [(INPUT_DATA_WIDTH-1):0] in_a, // weight ???? ???? feature ????
+    input wire signed [(OUTPUT_DATA_WIDTH-1):0] in_b, // partial sum ????
+	input wire enable, // PE ???? - input?? ?????????? ???????? enable?? ?????????? ??????!
+	input wire save, // weight ????
 	
 	output reg signed [(INPUT_DATA_WIDTH-1):0] out_a,
 	output reg signed [(OUTPUT_DATA_WIDTH-1):0] out_b,
@@ -30,11 +30,17 @@ module PE
 		end
 		else if(save) begin
 			weight <= in_a;
+            out_enable <= enable;
+            out_a <= in_a;
 		end
 		else if(enable) begin
             out_b <= in_b + in_a * weight;
+            out_enable <= enable;
+            out_a <= in_a;
 		end
-		out_enable <= enable;
-        out_a <= in_a;
+		else begin
+		    out_enable <= enable;
+            out_a <= in_a;
+        end
 	end
 endmodule

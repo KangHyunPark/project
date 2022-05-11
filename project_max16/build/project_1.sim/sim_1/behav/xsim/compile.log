@@ -1,0 +1,54 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/build/project_1.srcs/sources_1/ip/PFT_partial_bram/sim/PFT_partial_bram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PFT_partial_bram
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/build/project_1.srcs/sources_1/ip/NIT_bram/sim/NIT_bram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module NIT_bram
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/build/project_1.srcs/sources_1/ip/output_bram/sim/output_bram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module output_bram
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/build/project_1.srcs/sources_1/ip/weight_bram/sim/weight_bram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module weight_bram
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/build/project_1.srcs/sources_1/ip/input_bram/sim/input_bram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module input_bram
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/src/OR32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module OR32
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/src/PE.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PE
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/src/PFT_bram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PFT_bram
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/src/address_generator.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module address_generator
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/src/controller.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module controller
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/src/delay_unit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module delay_unit
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/src/encoder32x5.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module encoder32x5
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/src/global_buffer.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module global_buffer
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/src/max_module32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module max_module32
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/src/max_operator.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module max_operator
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/src/microaddr_generator.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module microaddr_generator
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/src/shift_register.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module shift_register
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/src/subtract_module32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module subtract_module32
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/src/subtract_operator.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module subtract_operator
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/src/systolic.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module systolic
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/src/systolic_controller.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module systolic_controller
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/src/systolic_input_buffer.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module systolic_input_buffer
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/src/systolic_output_buffer.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module systolic_output_buffer
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/src/systolic_row.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module systolic_row
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/src/top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/src/valid_generator32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module valid_generator32
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/tb/tb_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_top

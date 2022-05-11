@@ -6,7 +6,7 @@ module systolic
     parameter integer PE_COL = 16,
     parameter integer INPUT_DATA_WIDTH = 8,
     parameter integer WEIGHT_DATA_WIDTH = 8,
-    parameter integer OUTPUT_DATA_WIDTH = 24
+    parameter integer OUTPUT_DATA_WIDTH = 20
     )
 (
     input wire clk,
@@ -17,7 +17,7 @@ module systolic
     input wire save,
     
     output wire [(INPUT_DATA_WIDTH*PE_ROW)-1:0] out_a_bus, // for debugging
-    output wire [(INPUT_DATA_WIDTH*PE_COL)-1:0] out_b_bus // 순차적으로 결과가 나옴
+    output wire [(INPUT_DATA_WIDTH*PE_COL)-1:0] out_b_bus // ?????????? ?????? ????
 
     );
     
@@ -80,7 +80,7 @@ module systolic
     generate
         for(j=0; j<=PE_COL-1; j=j+1) begin
             assign out_b_bus[INPUT_DATA_WIDTH*(j+1)-1] = b_bus[PE_ROW-1][OUTPUT_DATA_WIDTH*(j+1)-1];
-            assign out_b_bus[(INPUT_DATA_WIDTH*j)+:(INPUT_DATA_WIDTH-1)] = b_bus[PE_ROW-1][OUTPUT_DATA_WIDTH*(j+1)-1] ? (b_bus[PE_ROW-1][(OUTPUT_DATA_WIDTH*j+14)+:9]==9'b111111111 ? b_bus[PE_ROW-1][(OUTPUT_DATA_WIDTH*j+7)+:7] :7'b0000000) : (b_bus[PE_ROW-1][(OUTPUT_DATA_WIDTH*j+14)+:9]==9'b0000000 ? b_bus[PE_ROW-1][(OUTPUT_DATA_WIDTH*j+7)+:7] : 7'b1111111); 
+            assign out_b_bus[(INPUT_DATA_WIDTH*j)+:(INPUT_DATA_WIDTH-1)] = b_bus[PE_ROW-1][OUTPUT_DATA_WIDTH*(j+1)-1] ? (b_bus[PE_ROW-1][(OUTPUT_DATA_WIDTH*j+14)+:5]==5'b11111 ? b_bus[PE_ROW-1][(OUTPUT_DATA_WIDTH*j+7)+:7] :7'b0000000) : (b_bus[PE_ROW-1][(OUTPUT_DATA_WIDTH*j+14)+:5]==5'b00000 ? b_bus[PE_ROW-1][(OUTPUT_DATA_WIDTH*j+7)+:7] : 7'b1111111); 
         end
     endgenerate
 endmodule

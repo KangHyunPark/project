@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="NIT_bram_synth_1" LaunchPart="xc7a200tffg1156-3" LaunchTime="1652241563">
+  <File Type="VDS-TIMING-PB" Name="NIT_bram_timing_summary_synth.pb"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="NIT_bram_timing_summary_synth.rpt"/>
+  <File Type="RDS-DCP" Name="NIT_bram.dcp"/>
+  <File Type="REPORTS-TCL" Name="NIT_bram_reports.tcl"/>
+  <File Type="PA-TCL" Name="NIT_bram.tcl"/>
+  <File Type="RDS-RDS" Name="NIT_bram.vds"/>
+  <File Type="RDS-PROPCONSTRS" Name="NIT_bram_drc_synth.rpt"/>
+  <File Type="RDS-UTIL" Name="NIT_bram_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="NIT_bram_utilization_synth.pb"/>
+  <FileSet Name="sources" Type="BlockSrcs" RelSrcDir="$PSRCDIR/NIT_bram">
+    <File Path="$PSRCDIR/sources_1/ip/NIT_bram/NIT_bram.xci">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopModule" Val="NIT_bram"/>
+      <Option Name="UseBlackboxStub" Val="1"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="BlockSrcs" RelSrcDir="$PSRCDIR/NIT_bram">
+    <File Path="$PSRCDIR/sources_1/ip/NIT_bram/NIT_bram.xci">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopModule" Val="NIT_bram"/>
+      <Option Name="UseBlackboxStub" Val="1"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020">
+      <Desc>Vivado Synthesis Defaults</Desc>
+    </StratHandle>
+    <Step Id="synth_design"/>
+  </Strategy>
+</GenRun>

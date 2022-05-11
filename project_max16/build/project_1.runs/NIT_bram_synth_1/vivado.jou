@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:35 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Wed May 11 12:59:25 2022
+# Process ID: 100200
+# Current directory: /home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/build/project_1.runs/NIT_bram_synth_1
+# Command line: vivado -log NIT_bram.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source NIT_bram.tcl
+# Log file: /home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/build/project_1.runs/NIT_bram_synth_1/NIT_bram.vds
+# Journal file: /home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/build/project_1.runs/NIT_bram_synth_1/vivado.jou
+#-----------------------------------------------------------
+source NIT_bram.tcl -notrace

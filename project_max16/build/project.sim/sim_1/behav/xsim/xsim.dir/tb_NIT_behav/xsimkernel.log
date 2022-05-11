@@ -1,7 +1,0 @@
-Running: xsim.dir/tb_NIT_behav/xsimk.exe -simmode gui -wdb tb_NIT_behav.wdb -simrunnum 0 -socket 5689
-Design successfully loaded
-Design Loading Memory Usage: 9096 KB (Peak: 9096 KB)
-Design Loading CPU Usage: 46 ms
-Simulation completed
-Simulation Memory Usage: 10880 KB (Peak: 10880 KB)
-Simulation CPU Usage: 546 ms

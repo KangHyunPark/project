@@ -1,2 +1,0 @@
-output_bram.v,verilog,xil_defaultlib,../../../../project.gen/sources_1/ip/output_bram/sim/output_bram.v,
-glbl.v,Verilog,xil_defaultlib,glbl.v

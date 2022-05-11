@@ -33,6 +33,7 @@ module max_module32
 			max_operator # (
 				.DATA_WIDTH(DATA_WIDTH)
 			) max1 (
+			     .clk(clk),
 			     .in_a(input1[2*i]),
 			     .in_b(input1[2*i+1]),
 			     
@@ -46,6 +47,7 @@ module max_module32
 			max_operator # (
 				.DATA_WIDTH(DATA_WIDTH)
 			) max2 (
+			     .clk(clk),
 			     .in_a(input2[2*i]),
 			     .in_b(input2[2*i+1]),
 			     
@@ -59,6 +61,7 @@ module max_module32
 			max_operator # (
 				.DATA_WIDTH(DATA_WIDTH)
 			) max3 (
+			     .clk(clk),
 			     .in_a(input3[2*i]),
 			     .in_b(input3[2*i+1]),
 			     
@@ -72,6 +75,7 @@ module max_module32
 			max_operator # (
 				.DATA_WIDTH(DATA_WIDTH)
 			) max4 (
+			     .clk(clk),
 			     .in_a(input4[2*i]),
 			     .in_b(input4[2*i+1]),
 			     
@@ -83,6 +87,7 @@ module max_module32
     max_operator # (
         .DATA_WIDTH(DATA_WIDTH)
     ) max5 (
+         .clk(clk),
          .in_a(input5[0]),
          .in_b(input5[1]),
          
@@ -92,6 +97,7 @@ module max_module32
     max_operator # (
         .DATA_WIDTH(DATA_WIDTH)
     ) max6 (
+         .clk(clk),
          .in_a(input6),
          .in_b(last_input),
          

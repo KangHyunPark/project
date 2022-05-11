@@ -9,8 +9,8 @@ module tb_systolic_short_sram;
     parameter HALF_CLK_PERIOD = CLK_PERIOD/2;
     
     parameter DATA_WIDTH = 8;
-    parameter ADDR_WIDTH = 7;
-    parameter OUTPUT_DATA_WIDTH = 32;
+    parameter ADDR_WIDTH = 17;
+    parameter OUTPUT_DATA_WIDTH = 20;
     parameter length = 16;
     parameter PE_ROW = 16;
     parameter PE_COL = 16;
@@ -172,7 +172,13 @@ module tb_systolic_short_sram;
         end
         
         @(posedge clk) write <= 1'b0;
-
+        
+        @(posedge clk);
+        @(posedge clk);
+        @(posedge clk);
+        @(posedge clk);
+        @(posedge clk);
+        $finish;
     end
     
     systolic #(
@@ -226,11 +232,12 @@ module tb_systolic_short_sram;
 		
 		.dout(systolic_result)
     );   
-     
-    simple_sram2 # (
+    
+ 
+    global_buffer # (
         .addr_width(ADDR_WIDTH),
         .data_width(DATA_WIDTH*length)
-    ) sram_bank (
+    ) u_global_buffer (
         .clk(clk),
         .waddr(waddr),
         .raddr_a(raddr_a), // systolic input, weight
@@ -241,7 +248,7 @@ module tb_systolic_short_sram;
         .dout_a(dout_a), // systolic input, weight
         .dout_b(dout_b) // systolic output
     );
-    
+
     assign in_a_bus = load_weight ? dout_a : a_buf_out;
     assign b_buf_in = first_partial ? {128{1'b0}} : dout_b;
     assign din = load_data ? data_line : systolic_result;
