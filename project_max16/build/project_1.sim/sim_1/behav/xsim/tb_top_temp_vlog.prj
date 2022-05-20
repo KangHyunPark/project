@@ -1,0 +1,35 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../project_1.srcs/sources_1/ip/PFT_partial_bram/PFT_partial_bram_sim_netlist.v" \
+"../../../../project_1.srcs/sources_1/ip/NIT_bram/NIT_bram_sim_netlist.v" \
+"../../../../project_1.srcs/sources_1/ip/output_bram/output_bram_sim_netlist.v" \
+"../../../../project_1.srcs/sources_1/ip/weight_bram/weight_bram_sim_netlist.v" \
+"../../../../project_1.srcs/sources_1/ip/input_bram/input_bram_sim_netlist.v" \
+"../../../../../src/OR32.v" \
+"../../../../../src/PE.v" \
+"../../../../../src/PFT_bram.v" \
+"../../../../../src/address_generator.v" \
+"../../../../../src/controller.v" \
+"../../../../../src/delay_unit.v" \
+"../../../../../src/encoder32x5.v" \
+"../../../../../src/global_buffer.v" \
+"../../../../../src/max_module32.v" \
+"../../../../../src/max_operator.v" \
+"../../../../../src/microaddr_generator.v" \
+"../../../../../src/shift_register.v" \
+"../../../../../src/subtract_module32.v" \
+"../../../../../src/subtract_operator.v" \
+"../../../../../src/systolic.v" \
+"../../../../../src/systolic_controller.v" \
+"../../../../../src/systolic_input_buffer.v" \
+"../../../../../src/systolic_output_buffer.v" \
+"../../../../../src/systolic_row.v" \
+"../../../../project_1.srcs/sources_1/new/top_temp.v" \
+"../../../../../src/valid_generator32.v" \
+"../../../../project_1.srcs/sim_1/new/tb_top_temp.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

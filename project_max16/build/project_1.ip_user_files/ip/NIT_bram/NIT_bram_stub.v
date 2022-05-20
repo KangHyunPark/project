@@ -1,13 +1,13 @@
 // Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2020.1 (lin64) Build 2902540 Wed May 27 19:54:35 MDT 2020
-// Date        : Wed May 11 13:01:14 2022
+// Date        : Wed May 11 17:36:58 2022
 // Host        : comparch.snu.ac.kr running 64-bit unknown
 // Command     : write_verilog -force -mode synth_stub
 //               /home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/build/project_1.srcs/sources_1/ip/NIT_bram/NIT_bram_stub.v
 // Design      : NIT_bram
 // Purpose     : Stub declaration of top-level module interface
-// Device      : xc7a200tffg1156-3
+// Device      : xc7a200tfbg676-2
 // --------------------------------------------------------------------------------
 
 // This empty module with port declaration file causes synthesis tools to infer a black box for IP.

@@ -17,7 +17,7 @@ module tb_top;
     parameter log_bank = 5;
     parameter microaddr_width = 5;
    
-    parameter global_buf_addr_width = 17;
+    parameter global_buf_addr_width = 16;
     parameter OUTPUT_DATA_WIDTH = 20;
     
     reg clk;
@@ -57,10 +57,10 @@ module tb_top;
     initial begin
         INIT_INPUT_ADDR <= {(global_buf_addr_width){1'b0}};
         INIT_WEIGHT_ADDR <= {2'b01,{(global_buf_addr_width-2){1'b0}}};
-        INIT_OUTPUT_ADDR <= {1'b1,{(global_buf_addr_width-1){1'b0}}};
+        INIT_OUTPUT_ADDR <= {2'b10,{(global_buf_addr_width-2){1'b0}}};
         N_SAMPLE <= 13'd1024;
-        INPUT_FEATURE_LENGTH <= 13'd256;
-        input_feature_length = 256;
+        INPUT_FEATURE_LENGTH <= 13'd16;
+        input_feature_length = 16;
         OUTPUT_FEATURE_LENGTH <= 13'd64;
         output_feature_length = 64;
 

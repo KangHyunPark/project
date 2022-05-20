@@ -2,8 +2,8 @@
 # Vivado v2020.1 (64-bit)
 # SW Build 2902540 on Wed May 27 19:54:35 MDT 2020
 # IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
-# Start of session at: Wed May 11 13:02:07 2022
-# Process ID: 36987
+# Start of session at: Wed May 11 18:26:16 2022
+# Process ID: 88438
 # Current directory: /home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/build/project_1.runs/synth_1
 # Command line: vivado -log top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top.tcl
 # Log file: /home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/build/project_1.runs/synth_1/top.vds

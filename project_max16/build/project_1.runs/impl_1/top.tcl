@@ -114,6 +114,7 @@ proc step_failed { step } {
   close $ch
 }
 
+set_msg_config -id {Common 17-41} -limit 10000000
 
 OPTRACE "Implementation" START { ROLLUP_1 }
 OPTRACE "Phase: Init Design" START { ROLLUP_AUTO }
@@ -123,7 +124,8 @@ set rc [catch {
   create_msg_db init_design.pb
   set_param chipscope.maxJobs 6
 OPTRACE "create in-memory project" START { }
-  create_project -in_memory -part xc7a200tffg1156-3
+  create_project -in_memory -part xc7a200tfbg676-2
+  set_property board_part xilinx.com:ac701:part0:1.4 [current_project]
   set_property design_mode GateLvl [current_fileset]
   set_param project.singleFileAddWarning.threshold 0
 OPTRACE "create in-memory project" END { }
@@ -136,16 +138,17 @@ OPTRACE "set parameters" START { }
 OPTRACE "set parameters" END { }
 OPTRACE "add files" START { }
   add_files -quiet /home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/build/project_1.runs/synth_1/top.dcp
+  read_ip -quiet /home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/build/project_1.srcs/sources_1/ip/weight_bram/weight_bram.xci
   read_ip -quiet /home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/build/project_1.srcs/sources_1/ip/input_bram/input_bram.xci
-  read_ip -quiet /home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/build/project_1.srcs/sources_1/ip/output_bram/output_bram.xci
   read_ip -quiet /home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/build/project_1.srcs/sources_1/ip/PFT_partial_bram/PFT_partial_bram.xci
   read_ip -quiet /home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/build/project_1.srcs/sources_1/ip/NIT_bram/NIT_bram.xci
-  read_ip -quiet /home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/build/project_1.srcs/sources_1/ip/weight_bram/weight_bram.xci
+  read_ip -quiet /home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/build/project_1.srcs/sources_1/ip/output_bram/output_bram.xci
 OPTRACE "read constraints: implementation" START { }
+  read_xdc /home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/build/project_1.srcs/constrs_1/new/test.xdc
 OPTRACE "read constraints: implementation" END { }
 OPTRACE "add files" END { }
 OPTRACE "link_design" START { }
-  link_design -top top -part xc7a200tffg1156-3
+  link_design -top top -part xc7a200tfbg676-2
 OPTRACE "link_design" END { }
 OPTRACE "gray box cells" START { }
 OPTRACE "gray box cells" END { }
@@ -172,7 +175,7 @@ set rc [catch {
 OPTRACE "read constraints: opt_design" START { }
 OPTRACE "read constraints: opt_design" END { }
 OPTRACE "opt_design" START { }
-  opt_design -retarget
+  opt_design -retarget -bram_power_opt
 OPTRACE "opt_design" END { }
 OPTRACE "read constraints: opt_design_post" START { }
 OPTRACE "read constraints: opt_design_post" END { }
@@ -193,6 +196,34 @@ if {$rc} {
 }
 
 OPTRACE "Phase: Opt Design" END { }
+OPTRACE "Phase: Power Opt Design" START { ROLLUP_AUTO }
+start_step power_opt_design
+set ACTIVE_STEP power_opt_design
+set rc [catch {
+  create_msg_db power_opt_design.pb
+OPTRACE "read constraints: power_opt_design" START { }
+OPTRACE "read constraints: power_opt_design" END { }
+OPTRACE "pwr_opt_design" START { }
+  power_opt_design 
+OPTRACE "pwr_opt_design" END { }
+OPTRACE "read constraints: power_opt_design_post" START { }
+OPTRACE "read constraints: power_opt_design_post" END { }
+OPTRACE "Power Opt Design: write_checkpoint" START { CHECKPOINT }
+  write_checkpoint -force top_pwropt.dcp
+OPTRACE "Power Opt Design: write_checkpoint" END { }
+OPTRACE "pwr_opt_design reports" START { REPORT }
+OPTRACE "pwr_opt_design reports" END { }
+  close_msg_db -file power_opt_design.pb
+} RESULT]
+if {$rc} {
+  step_failed power_opt_design
+  return -code error $RESULT
+} else {
+  end_step power_opt_design
+  unset ACTIVE_STEP 
+}
+
+OPTRACE "Phase: Power Opt Design" END { }
 OPTRACE "Phase: Place Design" START { ROLLUP_AUTO }
 start_step place_design
 set ACTIVE_STEP place_design
@@ -229,6 +260,30 @@ if {$rc} {
 }
 
 OPTRACE "Phase: Place Design" END { }
+OPTRACE "Phase: Power Opt Design" START { ROLLUP_AUTO }
+start_step post_place_power_opt_design
+set ACTIVE_STEP post_place_power_opt_design
+set rc [catch {
+  create_msg_db post_place_power_opt_design.pb
+OPTRACE "power_opt_design" START { }
+  power_opt_design 
+OPTRACE "power_opt_design" END { }
+OPTRACE "Post-Place Power Opt Design: write_checkpoint" START { CHECKPOINT }
+  write_checkpoint -force top_postplace_pwropt.dcp
+OPTRACE "Post-Place Power Opt Design: write_checkpoint" END { }
+OPTRACE "power_opt_design reports" START { REPORT }
+OPTRACE "power_opt_design reports" END { }
+  close_msg_db -file post_place_power_opt_design.pb
+} RESULT]
+if {$rc} {
+  step_failed post_place_power_opt_design
+  return -code error $RESULT
+} else {
+  end_step post_place_power_opt_design
+  unset ACTIVE_STEP 
+}
+
+OPTRACE "Phase: Power Opt Design" END { }
 OPTRACE "Phase: Physical Opt Design" START { ROLLUP_AUTO }
 start_step phys_opt_design
 set ACTIVE_STEP phys_opt_design

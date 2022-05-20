@@ -2,24 +2,24 @@
 # Vivado v2020.1 (64-bit)
 # SW Build 2902540 on Wed May 27 19:54:35 MDT 2020
 # IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
-# Start of session at: Wed May 11 13:02:07 2022
-# Process ID: 36987
+# Start of session at: Wed May 11 18:26:16 2022
+# Process ID: 88438
 # Current directory: /home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/build/project_1.runs/synth_1
 # Command line: vivado -log top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top.tcl
 # Log file: /home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/build/project_1.runs/synth_1/top.vds
 # Journal file: /home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/build/project_1.runs/synth_1/vivado.jou
 #-----------------------------------------------------------
 source top.tcl -notrace
-Command: synth_design -top top -part xc7a200tffg1156-3
+Command: synth_design -top top -part xc7a200tfbg676-2
 Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a200t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a200t'
-INFO: [Device 21-403] Loading part xc7a200tffg1156-3
+INFO: [Device 21-403] Loading part xc7a200tfbg676-2
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 61452
+INFO: [Synth 8-7075] Helper process launched with PID 113790
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 2105.121 ; gain = 0.000 ; free physical = 16144 ; free virtual = 111153
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 2109.094 ; gain = 0.000 ; free physical = 2205 ; free virtual = 108542
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'top' [/home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/src/top.v:2]
 	Parameter DATA_WIDTH bound to: 8 - type: integer 
@@ -33,7 +33,7 @@ INFO: [Synth 8-6157] synthesizing module 'top' [/home/ipa/junseo/tmp/khp/mesoras
 	Parameter PFT_bank bound to: 32 - type: integer 
 	Parameter log_bank bound to: 5 - type: integer 
 	Parameter microaddr_width bound to: 5 - type: integer 
-	Parameter global_buf_addr_width bound to: 17 - type: integer 
+	Parameter global_buf_addr_width bound to: 16 - type: integer 
 	Parameter OUTPUT_DATA_WIDTH bound to: 20 - type: integer 
 INFO: [Synth 8-6157] synthesizing module 'max_module32' [/home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/src/max_module32.v:2]
 	Parameter DATA_WIDTH bound to: 8 - type: integer 
@@ -43,7 +43,7 @@ INFO: [Synth 8-6157] synthesizing module 'max_operator' [/home/ipa/junseo/tmp/kh
 INFO: [Synth 8-6155] done synthesizing module 'max_operator' (1#1) [/home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/src/max_operator.v:2]
 INFO: [Synth 8-6155] done synthesizing module 'max_module32' (2#1) [/home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/src/max_module32.v:2]
 INFO: [Synth 8-6157] synthesizing module 'controller' [/home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/src/controller.v:3]
-	Parameter global_buf_addr_width bound to: 17 - type: integer 
+	Parameter global_buf_addr_width bound to: 16 - type: integer 
 	Parameter bank bound to: 32 - type: integer 
 	Parameter log_bank bound to: 5 - type: integer 
 	Parameter microaddr_width bound to: 5 - type: integer 
@@ -58,7 +58,7 @@ INFO: [Synth 8-6157] synthesizing module 'controller' [/home/ipa/junseo/tmp/khp/
 INFO: [Synth 8-6155] done synthesizing module 'controller' (3#1) [/home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/src/controller.v:3]
 INFO: [Synth 8-6157] synthesizing module 'systolic_controller' [/home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/src/systolic_controller.v:3]
 	Parameter PE_ROW bound to: 16 - type: integer 
-	Parameter global_buf_addr_width bound to: 17 - type: integer 
+	Parameter global_buf_addr_width bound to: 16 - type: integer 
 	Parameter STATE_IDLE bound to: 3'b000 
 	Parameter STATE_RECEIVE_CONSTANT bound to: 3'b001 
 	Parameter STATE_LOAD_WEIGHT bound to: 3'b010 
@@ -159,32 +159,38 @@ INFO: [Synth 8-6157] synthesizing module 'systolic_output_buffer' [/home/ipa/jun
 	Parameter length bound to: 16 - type: integer 
 INFO: [Synth 8-6155] done synthesizing module 'systolic_output_buffer' (10#1) [/home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/src/systolic_output_buffer.v:2]
 INFO: [Synth 8-6157] synthesizing module 'global_buffer' [/home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/src/global_buffer.v:2]
-	Parameter addr_width bound to: 17 - type: integer 
+	Parameter addr_width bound to: 16 - type: integer 
 	Parameter data_width bound to: 128 - type: integer 
-INFO: [Synth 8-6157] synthesizing module 'input_bram' [/home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/build/project_1.runs/synth_1/.Xil/Vivado-36987-comparch.snu.ac.kr/realtime/input_bram_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'input_bram' (11#1) [/home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/build/project_1.runs/synth_1/.Xil/Vivado-36987-comparch.snu.ac.kr/realtime/input_bram_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'weight_bram' [/home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/build/project_1.runs/synth_1/.Xil/Vivado-36987-comparch.snu.ac.kr/realtime/weight_bram_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'weight_bram' (12#1) [/home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/build/project_1.runs/synth_1/.Xil/Vivado-36987-comparch.snu.ac.kr/realtime/weight_bram_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'output_bram' [/home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/build/project_1.runs/synth_1/.Xil/Vivado-36987-comparch.snu.ac.kr/realtime/output_bram_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'output_bram' (13#1) [/home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/build/project_1.runs/synth_1/.Xil/Vivado-36987-comparch.snu.ac.kr/realtime/output_bram_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'input_bram' [/home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/build/project_1.runs/synth_1/.Xil/Vivado-88438-comparch.snu.ac.kr/realtime/input_bram_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'input_bram' (11#1) [/home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/build/project_1.runs/synth_1/.Xil/Vivado-88438-comparch.snu.ac.kr/realtime/input_bram_stub.v:6]
+WARNING: [Synth 8-689] width (15) of port connection 'addra' does not match port width (14) of module 'input_bram' [/home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/src/global_buffer.v:96]
+WARNING: [Synth 8-689] width (15) of port connection 'addrb' does not match port width (14) of module 'input_bram' [/home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/src/global_buffer.v:101]
+INFO: [Synth 8-6157] synthesizing module 'weight_bram' [/home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/build/project_1.runs/synth_1/.Xil/Vivado-88438-comparch.snu.ac.kr/realtime/weight_bram_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'weight_bram' (12#1) [/home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/build/project_1.runs/synth_1/.Xil/Vivado-88438-comparch.snu.ac.kr/realtime/weight_bram_stub.v:6]
+WARNING: [Synth 8-689] width (13) of port connection 'addra' does not match port width (12) of module 'weight_bram' [/home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/src/global_buffer.v:107]
+WARNING: [Synth 8-689] width (13) of port connection 'addrb' does not match port width (12) of module 'weight_bram' [/home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/src/global_buffer.v:112]
+INFO: [Synth 8-6157] synthesizing module 'output_bram' [/home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/build/project_1.runs/synth_1/.Xil/Vivado-88438-comparch.snu.ac.kr/realtime/output_bram_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'output_bram' (13#1) [/home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/build/project_1.runs/synth_1/.Xil/Vivado-88438-comparch.snu.ac.kr/realtime/output_bram_stub.v:6]
+WARNING: [Synth 8-689] width (15) of port connection 'addra' does not match port width (14) of module 'output_bram' [/home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/src/global_buffer.v:118]
+WARNING: [Synth 8-689] width (15) of port connection 'addrb' does not match port width (14) of module 'output_bram' [/home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/src/global_buffer.v:123]
 INFO: [Synth 8-6155] done synthesizing module 'global_buffer' (14#1) [/home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/src/global_buffer.v:2]
 INFO: [Synth 8-6157] synthesizing module 'delay_unit' [/home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/src/delay_unit.v:3]
-	Parameter DATA_WIDTH bound to: 17 - type: integer 
+	Parameter DATA_WIDTH bound to: 16 - type: integer 
 	Parameter delay bound to: 34 - type: integer 
 INFO: [Synth 8-6155] done synthesizing module 'delay_unit' (15#1) [/home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/src/delay_unit.v:3]
 INFO: [Synth 8-6157] synthesizing module 'delay_unit__parameterized0' [/home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/src/delay_unit.v:3]
 	Parameter DATA_WIDTH bound to: 1 - type: integer 
 	Parameter delay bound to: 34 - type: integer 
 INFO: [Synth 8-6155] done synthesizing module 'delay_unit__parameterized0' (15#1) [/home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/src/delay_unit.v:3]
-INFO: [Synth 8-6157] synthesizing module 'NIT_bram' [/home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/build/project_1.runs/synth_1/.Xil/Vivado-36987-comparch.snu.ac.kr/realtime/NIT_bram_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'NIT_bram' (16#1) [/home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/build/project_1.runs/synth_1/.Xil/Vivado-36987-comparch.snu.ac.kr/realtime/NIT_bram_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'NIT_bram' [/home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/build/project_1.runs/synth_1/.Xil/Vivado-88438-comparch.snu.ac.kr/realtime/NIT_bram_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'NIT_bram' (16#1) [/home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/build/project_1.runs/synth_1/.Xil/Vivado-88438-comparch.snu.ac.kr/realtime/NIT_bram_stub.v:6]
 INFO: [Synth 8-6157] synthesizing module 'PFT_bram' [/home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/src/PFT_bram.v:3]
 	Parameter PFT_addr_width bound to: 5 - type: integer 
 	Parameter PFT_data_width bound to: 8 - type: integer 
 	Parameter PE_COL bound to: 16 - type: integer 
 	Parameter PFT_bank bound to: 32 - type: integer 
-INFO: [Synth 8-6157] synthesizing module 'PFT_partial_bram' [/home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/build/project_1.runs/synth_1/.Xil/Vivado-36987-comparch.snu.ac.kr/realtime/PFT_partial_bram_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'PFT_partial_bram' (17#1) [/home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/build/project_1.runs/synth_1/.Xil/Vivado-36987-comparch.snu.ac.kr/realtime/PFT_partial_bram_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'PFT_partial_bram' [/home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/build/project_1.runs/synth_1/.Xil/Vivado-88438-comparch.snu.ac.kr/realtime/PFT_partial_bram_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'PFT_partial_bram' (17#1) [/home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/build/project_1.runs/synth_1/.Xil/Vivado-88438-comparch.snu.ac.kr/realtime/PFT_partial_bram_stub.v:6]
 INFO: [Synth 8-6157] synthesizing module 'encoder32x5' [/home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/src/encoder32x5.v:3]
 INFO: [Synth 8-6155] done synthesizing module 'encoder32x5' (18#1) [/home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/src/encoder32x5.v:3]
 INFO: [Synth 8-6155] done synthesizing module 'PFT_bram' (19#1) [/home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/src/PFT_bram.v:3]
@@ -232,26 +238,26 @@ INFO: [Synth 8-6155] done synthesizing module 'subtract_operator' (24#1) [/home/
 INFO: [Synth 8-6155] done synthesizing module 'subtract_module32' (25#1) [/home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/src/subtract_module32.v:2]
 INFO: [Synth 8-6155] done synthesizing module 'top' (26#1) [/home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/src/top.v:2]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:11 . Memory (MB): peak = 2171.969 ; gain = 66.848 ; free physical = 16134 ; free virtual = 111145
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:11 . Memory (MB): peak = 2169.941 ; gain = 60.848 ; free physical = 2196 ; free virtual = 108535
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:12 . Memory (MB): peak = 2171.969 ; gain = 66.848 ; free physical = 16137 ; free virtual = 111148
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:12 . Memory (MB): peak = 2169.941 ; gain = 60.848 ; free physical = 2201 ; free virtual = 108540
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:12 . Memory (MB): peak = 2171.969 ; gain = 66.848 ; free physical = 16138 ; free virtual = 111149
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:12 . Memory (MB): peak = 2169.941 ; gain = 60.848 ; free physical = 2201 ; free virtual = 108540
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00.24 ; elapsed = 00:00:00.24 . Memory (MB): peak = 2171.969 ; gain = 0.000 ; free physical = 16095 ; free virtual = 111106
+Netlist sorting complete. Time (s): cpu = 00:00:00.24 ; elapsed = 00:00:00.24 . Memory (MB): peak = 2169.941 ; gain = 0.000 ; free physical = 2163 ; free virtual = 108502
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
+Parsing XDC File [/home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/build/project_1.srcs/sources_1/ip/weight_bram/weight_bram/weight_bram_in_context.xdc] for cell 'u_global_buffer/u_weight_bram'
+Finished Parsing XDC File [/home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/build/project_1.srcs/sources_1/ip/weight_bram/weight_bram/weight_bram_in_context.xdc] for cell 'u_global_buffer/u_weight_bram'
 Parsing XDC File [/home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/build/project_1.srcs/sources_1/ip/input_bram/input_bram/input_bram_in_context.xdc] for cell 'u_global_buffer/u_input_bram'
 Finished Parsing XDC File [/home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/build/project_1.srcs/sources_1/ip/input_bram/input_bram/input_bram_in_context.xdc] for cell 'u_global_buffer/u_input_bram'
-Parsing XDC File [/home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/build/project_1.srcs/sources_1/ip/output_bram/output_bram/output_bram_in_context.xdc] for cell 'u_global_buffer/u_output_bram'
-Finished Parsing XDC File [/home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/build/project_1.srcs/sources_1/ip/output_bram/output_bram/output_bram_in_context.xdc] for cell 'u_global_buffer/u_output_bram'
 Parsing XDC File [/home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/build/project_1.srcs/sources_1/ip/PFT_partial_bram/PFT_partial_bram/PFT_partial_bram_in_context.xdc] for cell 'u_PFT/genblk1[0].PFT_bank'
 Finished Parsing XDC File [/home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/build/project_1.srcs/sources_1/ip/PFT_partial_bram/PFT_partial_bram/PFT_partial_bram_in_context.xdc] for cell 'u_PFT/genblk1[0].PFT_bank'
 Parsing XDC File [/home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/build/project_1.srcs/sources_1/ip/PFT_partial_bram/PFT_partial_bram/PFT_partial_bram_in_context.xdc] for cell 'u_PFT/genblk1[1].PFT_bank'
@@ -318,30 +324,68 @@ Parsing XDC File [/home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/build/
 Finished Parsing XDC File [/home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/build/project_1.srcs/sources_1/ip/PFT_partial_bram/PFT_partial_bram/PFT_partial_bram_in_context.xdc] for cell 'u_PFT/genblk1[31].PFT_bank'
 Parsing XDC File [/home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/build/project_1.srcs/sources_1/ip/NIT_bram/NIT_bram/NIT_bram_in_context.xdc] for cell 'u_NIT'
 Finished Parsing XDC File [/home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/build/project_1.srcs/sources_1/ip/NIT_bram/NIT_bram/NIT_bram_in_context.xdc] for cell 'u_NIT'
-Parsing XDC File [/home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/build/project_1.srcs/sources_1/ip/weight_bram/weight_bram/weight_bram_in_context.xdc] for cell 'u_global_buffer/u_weight_bram'
-Finished Parsing XDC File [/home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/build/project_1.srcs/sources_1/ip/weight_bram/weight_bram/weight_bram_in_context.xdc] for cell 'u_global_buffer/u_weight_bram'
+Parsing XDC File [/home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/build/project_1.srcs/sources_1/ip/output_bram/output_bram/output_bram_in_context.xdc] for cell 'u_global_buffer/u_output_bram'
+Finished Parsing XDC File [/home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/build/project_1.srcs/sources_1/ip/output_bram/output_bram/output_bram_in_context.xdc] for cell 'u_global_buffer/u_output_bram'
+Parsing XDC File [/home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/build/project_1.srcs/constrs_1/new/test.xdc]
+Finished Parsing XDC File [/home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/build/project_1.srcs/constrs_1/new/test.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2323.812 ; gain = 0.000 ; free physical = 15968 ; free virtual = 110979
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2325.750 ; gain = 0.000 ; free physical = 2023 ; free virtual = 108361
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00.10 ; elapsed = 00:00:00.10 . Memory (MB): peak = 2323.812 ; gain = 0.000 ; free physical = 15974 ; free virtual = 110984
+Constraint Validation Runtime : Time (s): cpu = 00:00:13 ; elapsed = 00:00:02 . Memory (MB): peak = 2325.750 ; gain = 0.000 ; free physical = 2012 ; free virtual = 108351
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'u_NIT' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'u_PFT/genblk1[0].PFT_bank' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'u_PFT/genblk1[10].PFT_bank' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'u_PFT/genblk1[11].PFT_bank' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'u_PFT/genblk1[12].PFT_bank' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'u_PFT/genblk1[13].PFT_bank' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'u_PFT/genblk1[14].PFT_bank' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'u_PFT/genblk1[15].PFT_bank' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'u_PFT/genblk1[16].PFT_bank' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'u_PFT/genblk1[17].PFT_bank' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'u_PFT/genblk1[18].PFT_bank' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'u_PFT/genblk1[19].PFT_bank' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'u_PFT/genblk1[1].PFT_bank' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'u_PFT/genblk1[20].PFT_bank' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'u_PFT/genblk1[21].PFT_bank' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'u_PFT/genblk1[22].PFT_bank' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'u_PFT/genblk1[23].PFT_bank' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'u_PFT/genblk1[24].PFT_bank' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'u_PFT/genblk1[25].PFT_bank' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'u_PFT/genblk1[26].PFT_bank' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'u_PFT/genblk1[27].PFT_bank' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'u_PFT/genblk1[28].PFT_bank' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'u_PFT/genblk1[29].PFT_bank' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'u_PFT/genblk1[2].PFT_bank' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'u_PFT/genblk1[30].PFT_bank' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'u_PFT/genblk1[31].PFT_bank' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'u_PFT/genblk1[3].PFT_bank' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'u_PFT/genblk1[4].PFT_bank' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'u_PFT/genblk1[5].PFT_bank' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'u_PFT/genblk1[6].PFT_bank' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'u_PFT/genblk1[7].PFT_bank' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'u_PFT/genblk1[8].PFT_bank' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'u_PFT/genblk1[9].PFT_bank' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'u_global_buffer/u_input_bram' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'u_global_buffer/u_output_bram' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'u_global_buffer/u_weight_bram' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:16 ; elapsed = 00:00:23 . Memory (MB): peak = 2323.812 ; gain = 218.691 ; free physical = 16115 ; free virtual = 111125
+Finished Constraint Validation : Time (s): cpu = 00:00:29 ; elapsed = 00:00:25 . Memory (MB): peak = 2343.562 ; gain = 234.469 ; free physical = 2170 ; free virtual = 108509
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
-Loading part: xc7a200tffg1156-3
+Loading part: xc7a200tfbg676-2
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:16 ; elapsed = 00:00:23 . Memory (MB): peak = 2323.812 ; gain = 218.691 ; free physical = 16113 ; free virtual = 111124
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:29 ; elapsed = 00:00:25 . Memory (MB): peak = 2343.562 ; gain = 234.469 ; free physical = 2168 ; free virtual = 108507
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for u_global_buffer/u_weight_bram. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for u_global_buffer/u_input_bram. (constraint file  auto generated constraint, line ).
-Applied set_property DONT_TOUCH = true for u_global_buffer/u_output_bram. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for u_PFT/\genblk1[0].PFT_bank . (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for u_PFT/\genblk1[10].PFT_bank . (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for u_PFT/\genblk1[11].PFT_bank . (constraint file  auto generated constraint, line ).
@@ -375,9 +419,9 @@ Applied set_property DONT_TOUCH = true for u_PFT/\genblk1[7].PFT_bank . (constra
 Applied set_property DONT_TOUCH = true for u_PFT/\genblk1[8].PFT_bank . (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for u_PFT/\genblk1[9].PFT_bank . (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for u_NIT. (constraint file  auto generated constraint, line ).
-Applied set_property DONT_TOUCH = true for u_global_buffer/u_weight_bram. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for u_global_buffer/u_output_bram. (constraint file  auto generated constraint, line ).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:16 ; elapsed = 00:00:23 . Memory (MB): peak = 2323.812 ; gain = 218.691 ; free physical = 16109 ; free virtual = 111120
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:30 ; elapsed = 00:00:26 . Memory (MB): peak = 2343.562 ; gain = 234.469 ; free physical = 2165 ; free virtual = 108504
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'controller'
 INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'address_generator'
@@ -404,7 +448,7 @@ INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'address_generator'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:18 ; elapsed = 00:00:25 . Memory (MB): peak = 2323.812 ; gain = 218.691 ; free physical = 16098 ; free virtual = 111111
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:32 ; elapsed = 00:00:28 . Memory (MB): peak = 2343.562 ; gain = 234.469 ; free physical = 2161 ; free virtual = 108501
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -412,8 +456,8 @@ Start RTL Component Statistics
 Detailed RTL Component Info : 
 +---Adders : 
 	   2 Input   32 Bit       Adders := 2     
-	   2 Input   17 Bit       Adders := 4     
-	   3 Input   17 Bit       Adders := 1     
+	   2 Input   16 Bit       Adders := 4     
+	   3 Input   16 Bit       Adders := 1     
 	   2 Input   13 Bit       Adders := 2     
 	   2 Input   12 Bit       Adders := 2     
 	   2 Input   10 Bit       Adders := 2     
@@ -437,8 +481,7 @@ Detailed RTL Component Info :
 	               32 Bit    Registers := 3     
 	               24 Bit    Registers := 3     
 	               20 Bit    Registers := 256   
-	               17 Bit    Registers := 47    
-	               16 Bit    Registers := 7     
+	               16 Bit    Registers := 54    
 	               13 Bit    Registers := 7     
 	               12 Bit    Registers := 2     
 	               10 Bit    Registers := 2     
@@ -456,16 +499,15 @@ Detailed RTL Component Info :
 	   3 Input  128 Bit        Muxes := 2     
 	   2 Input   32 Bit        Muxes := 2     
 	   2 Input   20 Bit        Muxes := 16    
-	   8 Input   17 Bit        Muxes := 9     
-	   2 Input   17 Bit        Muxes := 7     
-	   2 Input   16 Bit        Muxes := 3     
-	   2 Input   15 Bit        Muxes := 6     
-	   8 Input   13 Bit        Muxes := 2     
+	   2 Input   16 Bit        Muxes := 7     
+	   8 Input   16 Bit        Muxes := 9     
+	   2 Input   14 Bit        Muxes := 6     
 	   2 Input   13 Bit        Muxes := 3     
 	   4 Input   13 Bit        Muxes := 1     
-	   2 Input   12 Bit        Muxes := 2     
-	   8 Input   12 Bit        Muxes := 1     
+	   8 Input   13 Bit        Muxes := 2     
 	   4 Input   12 Bit        Muxes := 1     
+	   2 Input   12 Bit        Muxes := 5     
+	   8 Input   12 Bit        Muxes := 1     
 	   2 Input   10 Bit        Muxes := 1     
 	   8 Input   10 Bit        Muxes := 1     
 	   8 Input    9 Bit        Muxes := 2     
@@ -479,9 +521,9 @@ Detailed RTL Component Info :
 	   2 Input    2 Bit        Muxes := 6     
 	   4 Input    2 Bit        Muxes := 2     
 	   2 Input    1 Bit        Muxes := 26    
-	   8 Input    1 Bit        Muxes := 30    
 	   3 Input    1 Bit        Muxes := 1     
 	   4 Input    1 Bit        Muxes := 6     
+	   8 Input    1 Bit        Muxes := 30    
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
 ---------------------------------------------------------------------------------
@@ -504,7 +546,7 @@ DSP Report: Generating DSP output_addr0, operation Mode is: C+A*B.
 DSP Report: operator output_addr0 is absorbed into DSP output_addr0.
 DSP Report: operator output_addr1 is absorbed into DSP output_addr0.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:02 ; elapsed = 00:01:15 . Memory (MB): peak = 2323.812 ; gain = 218.691 ; free physical = 15950 ; free virtual = 110990
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:17 ; elapsed = 00:01:18 . Memory (MB): peak = 2343.562 ; gain = 234.469 ; free physical = 2001 ; free virtual = 108377
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -514,8 +556,8 @@ DSP: Preliminary Mapping	Report (see note below)
 +--------------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
 |Module Name         | DSP Mapping | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
 +--------------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
-|systolic_controller | C+A*B       | 12     | 9      | 17     | -      | 17     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
-|systolic_controller | C+A*B       | 12     | 9      | 17     | -      | 17     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|systolic_controller | C+A*B       | 12     | 9      | 16     | -      | 16     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|systolic_controller | C+A*B       | 12     | 9      | 16     | -      | 16     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
 +--------------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
 
 Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
@@ -526,19 +568,19 @@ Finished ROM, RAM, DSP and Shift Register Reporting
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:10 ; elapsed = 00:01:25 . Memory (MB): peak = 2323.812 ; gain = 218.691 ; free physical = 15826 ; free virtual = 110867
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:25 ; elapsed = 00:01:29 . Memory (MB): peak = 2343.562 ; gain = 234.469 ; free physical = 1866 ; free virtual = 108252
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:01:10 ; elapsed = 00:01:25 . Memory (MB): peak = 2323.812 ; gain = 218.691 ; free physical = 15819 ; free virtual = 110859
+Finished Timing Optimization : Time (s): cpu = 00:01:57 ; elapsed = 00:02:01 . Memory (MB): peak = 2391.574 ; gain = 282.480 ; free physical = 1793 ; free virtual = 108180
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:01:22 ; elapsed = 00:01:37 . Memory (MB): peak = 2384.891 ; gain = 279.770 ; free physical = 15813 ; free virtual = 110853
+Finished Technology Mapping : Time (s): cpu = 00:02:21 ; elapsed = 00:02:25 . Memory (MB): peak = 2498.535 ; gain = 389.441 ; free physical = 1809 ; free virtual = 108195
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -556,37 +598,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:01:27 ; elapsed = 00:01:43 . Memory (MB): peak = 2384.895 ; gain = 279.773 ; free physical = 15809 ; free virtual = 110849
+Finished IO Insertion : Time (s): cpu = 00:02:26 ; elapsed = 00:02:31 . Memory (MB): peak = 2498.539 ; gain = 389.445 ; free physical = 1796 ; free virtual = 108181
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:01:28 ; elapsed = 00:01:43 . Memory (MB): peak = 2384.895 ; gain = 279.773 ; free physical = 15809 ; free virtual = 110849
+Finished Renaming Generated Instances : Time (s): cpu = 00:02:27 ; elapsed = 00:02:31 . Memory (MB): peak = 2498.539 ; gain = 389.445 ; free physical = 1790 ; free virtual = 108175
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:31 ; elapsed = 00:01:47 . Memory (MB): peak = 2384.895 ; gain = 279.773 ; free physical = 15800 ; free virtual = 110840
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:02:34 ; elapsed = 00:02:38 . Memory (MB): peak = 2498.539 ; gain = 389.445 ; free physical = 1774 ; free virtual = 108160
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:01:32 ; elapsed = 00:01:47 . Memory (MB): peak = 2384.895 ; gain = 279.773 ; free physical = 15801 ; free virtual = 110841
+Finished Renaming Generated Ports : Time (s): cpu = 00:02:34 ; elapsed = 00:02:39 . Memory (MB): peak = 2498.539 ; gain = 389.445 ; free physical = 1779 ; free virtual = 108165
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:01:33 ; elapsed = 00:01:48 . Memory (MB): peak = 2384.895 ; gain = 279.773 ; free physical = 15802 ; free virtual = 110842
+Finished Handling Custom Attributes : Time (s): cpu = 00:02:35 ; elapsed = 00:02:40 . Memory (MB): peak = 2498.539 ; gain = 389.445 ; free physical = 1782 ; free virtual = 108167
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:01:33 ; elapsed = 00:01:48 . Memory (MB): peak = 2384.895 ; gain = 279.773 ; free physical = 15801 ; free virtual = 110841
+Finished Renaming Generated Nets : Time (s): cpu = 00:02:35 ; elapsed = 00:02:40 . Memory (MB): peak = 2498.539 ; gain = 389.445 ; free physical = 1778 ; free virtual = 108164
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -596,8 +638,21 @@ Static Shift Register Report:
 +------------+-----------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
 |Module Name | RTL Name                                                        | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
 +------------+-----------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
-|top         | u_delay_unit_addr/intermediate_reg[33][16]                      | 34     | 17    | NO           | NO                 | YES               | 0      | 34      | 
 |top         | u_delay_unit_write/intermediate_reg[33][0]                      | 34     | 1     | NO           | NO                 | YES               | 0      | 2       | 
+|top         | u_delay_unit_addr/intermediate_reg[33][15]                      | 34     | 16    | NO           | NO                 | YES               | 0      | 32      | 
+|top         | systolic_input_buffer_input/genblk1[3].row/mem_reg[31]          | 4      | 8     | YES          | NO                 | YES               | 8      | 0       | 
+|top         | systolic_input_buffer_input/genblk1[4].row/mem_reg[39]          | 5      | 8     | YES          | NO                 | YES               | 8      | 0       | 
+|top         | systolic_input_buffer_input/genblk1[5].row/mem_reg[47]          | 6      | 8     | YES          | NO                 | YES               | 8      | 0       | 
+|top         | systolic_input_buffer_input/genblk1[6].row/mem_reg[55]          | 7      | 8     | YES          | NO                 | YES               | 8      | 0       | 
+|top         | systolic_input_buffer_input/genblk1[7].row/mem_reg[63]          | 8      | 8     | YES          | NO                 | YES               | 8      | 0       | 
+|top         | systolic_input_buffer_input/genblk1[8].row/mem_reg[71]          | 9      | 8     | YES          | NO                 | YES               | 8      | 0       | 
+|top         | systolic_input_buffer_input/genblk1[9].row/mem_reg[79]          | 10     | 8     | YES          | NO                 | YES               | 8      | 0       | 
+|top         | systolic_input_buffer_input/genblk1[10].row/mem_reg[87]         | 11     | 8     | YES          | NO                 | YES               | 8      | 0       | 
+|top         | systolic_input_buffer_input/genblk1[11].row/mem_reg[95]         | 12     | 8     | YES          | NO                 | YES               | 8      | 0       | 
+|top         | systolic_input_buffer_input/genblk1[12].row/mem_reg[103]        | 13     | 8     | YES          | NO                 | YES               | 8      | 0       | 
+|top         | systolic_input_buffer_input/genblk1[13].row/mem_reg[111]        | 14     | 8     | YES          | NO                 | YES               | 8      | 0       | 
+|top         | systolic_input_buffer_input/genblk1[14].row/mem_reg[119]        | 15     | 8     | YES          | NO                 | YES               | 8      | 0       | 
+|top         | systolic_input_buffer_input/genblk1[15].row/mem_reg[127]        | 16     | 8     | YES          | NO                 | YES               | 8      | 0       | 
 |top         | u_systolic_output_buffer/genblk1[15].row/mem_reg[127]           | 16     | 8     | YES          | NO                 | YES               | 8      | 0       | 
 |top         | u_systolic_output_buffer/genblk1[14].row/mem_reg[119]           | 15     | 8     | YES          | NO                 | YES               | 8      | 0       | 
 |top         | u_systolic_output_buffer/genblk1[13].row/mem_reg[111]           | 14     | 8     | YES          | NO                 | YES               | 8      | 0       | 
@@ -624,19 +679,6 @@ Static Shift Register Report:
 |top         | u_systolic_input_buffer_partialsum/genblk1[13].row/mem_reg[111] | 14     | 8     | YES          | NO                 | YES               | 8      | 0       | 
 |top         | u_systolic_input_buffer_partialsum/genblk1[14].row/mem_reg[119] | 15     | 8     | YES          | NO                 | YES               | 8      | 0       | 
 |top         | u_systolic_input_buffer_partialsum/genblk1[15].row/mem_reg[127] | 16     | 8     | YES          | NO                 | YES               | 8      | 0       | 
-|top         | systolic_input_buffer_input/genblk1[3].row/mem_reg[31]          | 4      | 8     | YES          | NO                 | YES               | 8      | 0       | 
-|top         | systolic_input_buffer_input/genblk1[4].row/mem_reg[39]          | 5      | 8     | YES          | NO                 | YES               | 8      | 0       | 
-|top         | systolic_input_buffer_input/genblk1[5].row/mem_reg[47]          | 6      | 8     | YES          | NO                 | YES               | 8      | 0       | 
-|top         | systolic_input_buffer_input/genblk1[6].row/mem_reg[55]          | 7      | 8     | YES          | NO                 | YES               | 8      | 0       | 
-|top         | systolic_input_buffer_input/genblk1[7].row/mem_reg[63]          | 8      | 8     | YES          | NO                 | YES               | 8      | 0       | 
-|top         | systolic_input_buffer_input/genblk1[8].row/mem_reg[71]          | 9      | 8     | YES          | NO                 | YES               | 8      | 0       | 
-|top         | systolic_input_buffer_input/genblk1[9].row/mem_reg[79]          | 10     | 8     | YES          | NO                 | YES               | 8      | 0       | 
-|top         | systolic_input_buffer_input/genblk1[10].row/mem_reg[87]         | 11     | 8     | YES          | NO                 | YES               | 8      | 0       | 
-|top         | systolic_input_buffer_input/genblk1[11].row/mem_reg[95]         | 12     | 8     | YES          | NO                 | YES               | 8      | 0       | 
-|top         | systolic_input_buffer_input/genblk1[12].row/mem_reg[103]        | 13     | 8     | YES          | NO                 | YES               | 8      | 0       | 
-|top         | systolic_input_buffer_input/genblk1[13].row/mem_reg[111]        | 14     | 8     | YES          | NO                 | YES               | 8      | 0       | 
-|top         | systolic_input_buffer_input/genblk1[14].row/mem_reg[119]        | 15     | 8     | YES          | NO                 | YES               | 8      | 0       | 
-|top         | systolic_input_buffer_input/genblk1[15].row/mem_reg[127]        | 16     | 8     | YES          | NO                 | YES               | 8      | 0       | 
 +------------+-----------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
 
 ---------------------------------------------------------------------------------
@@ -668,46 +710,46 @@ Report Cell Usage:
 |35    |output_bram       |     1|
 |36    |weight_bram       |     1|
 |37    |BUFG              |     1|
-|38    |CARRY4            |  5229|
+|38    |CARRY4            |  5224|
 |39    |DSP48E1           |     2|
 |40    |LUT1              |   286|
-|41    |LUT2              | 12261|
-|42    |LUT3              |  5743|
-|43    |LUT4              |  8641|
-|44    |LUT5              |  3501|
-|45    |LUT6              | 11467|
+|41    |LUT2              | 12328|
+|42    |LUT3              |  5152|
+|43    |LUT4              |  8775|
+|44    |LUT5              |  3688|
+|45    |LUT6              | 10619|
 |46    |MUXF7             |   448|
 |47    |MUXF8             |   224|
 |48    |SRL16E            |   312|
-|49    |SRLC32E           |    36|
-|50    |FDCE              | 10252|
+|49    |SRLC32E           |    34|
+|50    |FDCE              | 10243|
 |51    |FDPE              |     2|
-|52    |FDRE              |  4891|
+|52    |FDRE              |  4890|
 |53    |FDSE              |    16|
-|54    |IBUF              |   578|
+|54    |IBUF              |   134|
 |55    |OBUF              |     1|
 +------+------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:01:33 ; elapsed = 00:01:49 . Memory (MB): peak = 2384.895 ; gain = 279.773 ; free physical = 15795 ; free virtual = 110835
+Finished Writing Synthesis Report : Time (s): cpu = 00:02:35 ; elapsed = 00:02:40 . Memory (MB): peak = 2498.539 ; gain = 389.445 ; free physical = 1778 ; free virtual = 108164
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:01:28 ; elapsed = 00:01:44 . Memory (MB): peak = 2384.895 ; gain = 127.930 ; free physical = 15851 ; free virtual = 110891
-Synthesis Optimization Complete : Time (s): cpu = 00:01:33 ; elapsed = 00:01:49 . Memory (MB): peak = 2384.898 ; gain = 279.773 ; free physical = 15851 ; free virtual = 110891
+Synthesis Optimization Runtime : Time (s): cpu = 00:02:17 ; elapsed = 00:02:33 . Memory (MB): peak = 2498.539 ; gain = 215.824 ; free physical = 1841 ; free virtual = 108227
+Synthesis Optimization Complete : Time (s): cpu = 00:02:35 ; elapsed = 00:02:40 . Memory (MB): peak = 2498.543 ; gain = 389.445 ; free physical = 1845 ; free virtual = 108231
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00.75 ; elapsed = 00:00:00.76 . Memory (MB): peak = 2384.898 ; gain = 0.000 ; free physical = 15868 ; free virtual = 110908
-INFO: [Netlist 29-17] Analyzing 5903 Unisim elements for replacement
+Netlist sorting complete. Time (s): cpu = 00:00:00.68 ; elapsed = 00:00:00.68 . Memory (MB): peak = 2498.543 ; gain = 0.000 ; free physical = 1858 ; free virtual = 108243
+INFO: [Netlist 29-17] Analyzing 5898 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2484.441 ; gain = 0.000 ; free physical = 15786 ; free virtual = 110826
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2530.555 ; gain = 0.000 ; free physical = 1796 ; free virtual = 108182
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
-111 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+111 Infos, 42 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:01:51 ; elapsed = 00:02:08 . Memory (MB): peak = 2484.441 ; gain = 379.477 ; free physical = 15957 ; free virtual = 110997
+synth_design: Time (s): cpu = 00:02:53 ; elapsed = 00:03:00 . Memory (MB): peak = 2530.555 ; gain = 421.617 ; free physical = 1983 ; free virtual = 108369
 INFO: [Common 17-1381] The checkpoint '/home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/build/project_1.runs/synth_1/top.dcp' has been generated.
-write_checkpoint: Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 2516.461 ; gain = 32.020 ; free physical = 15948 ; free virtual = 111000
+write_checkpoint: Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 2562.574 ; gain = 32.020 ; free physical = 1974 ; free virtual = 108371
 INFO: [runtcl-4] Executing : report_utilization -file top_utilization_synth.rpt -pb top_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Wed May 11 13:04:35 2022...
+INFO: [Common 17-206] Exiting Vivado at Wed May 11 18:29:35 2022...

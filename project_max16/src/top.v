@@ -14,7 +14,7 @@
     parameter log_bank = 5,
     parameter microaddr_width = 5,
    
-    parameter global_buf_addr_width = 17,
+    parameter global_buf_addr_width = 16,
     parameter OUTPUT_DATA_WIDTH = 20
     )
 (
@@ -34,8 +34,11 @@
     input wire [global_buf_addr_width-1:0] waddr_external,
     input wire [NIT_addr_width-1:0] NIT_addr_external,
     
-    input wire [DATA_WIDTH*length-1:0] GB_data_line,
-    input wire [(NIT_neighbor+1)*NIT_point_index-1:0] NIT_external_data,
+    //input wire [DATA_WIDTH*length-1:0] GB_data_line,
+    //input wire [(NIT_neighbor+1)*NIT_point_index-1:0] NIT_external_data,
+    
+    input wire [DATA_WIDTH-1:0] GB_data_line,
+    input wire [NIT_point_index-1:0] NIT_external_data,
     
     output wire done
     );

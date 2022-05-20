@@ -1,14 +1,14 @@
 -- Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2020.1 (lin64) Build 2902540 Wed May 27 19:54:35 MDT 2020
--- Date        : Wed May 11 13:01:14 2022
+-- Date        : Wed May 11 17:36:58 2022
 -- Host        : comparch.snu.ac.kr running 64-bit unknown
 -- Command     : write_vhdl -force -mode funcsim
 --               /home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/build/project_1.srcs/sources_1/ip/NIT_bram/NIT_bram_sim_netlist.vhdl
 -- Design      : NIT_bram
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
--- Device      : xc7a200tffg1156-3
+-- Device      : xc7a200tfbg676-2
 -- --------------------------------------------------------------------------------
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;

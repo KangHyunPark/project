@@ -2,8 +2,8 @@
 # Vivado v2020.1 (64-bit)
 # SW Build 2902540 on Wed May 27 19:54:35 MDT 2020
 # IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
-# Start of session at: Wed May 11 12:59:25 2022
-# Process ID: 100199
+# Start of session at: Wed May 11 17:35:07 2022
+# Process ID: 74633
 # Current directory: /home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/build/project_1.runs/weight_bram_synth_1
 # Command line: vivado -log weight_bram.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source weight_bram.tcl
 # Log file: /home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/build/project_1.runs/weight_bram_synth_1/weight_bram.vds

@@ -72,7 +72,7 @@ proc create_report { reportName command } {
 OPTRACE "synth_1" START { ROLLUP_AUTO }
 set_param chipscope.maxJobs 6
 OPTRACE "Creating in-memory project" START { }
-create_project -in_memory -part xc7a200tffg1156-3
+create_project -in_memory -part xc7a200tfbg676-2
 
 set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
@@ -83,6 +83,7 @@ set_property parent.project_path /home/ipa/junseo/tmp/khp/mesorasi/project/proje
 set_property XPM_LIBRARIES XPM_MEMORY [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
+set_property board_part xilinx.com:ac701:part0:1.4 [current_project]
 set_property ip_output_repo /home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/build/project_1.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
@@ -110,11 +111,11 @@ read_verilog -library xil_defaultlib {
   /home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/src/valid_generator32.v
   /home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/src/top.v
 }
+read_ip -quiet /home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/build/project_1.srcs/sources_1/ip/weight_bram/weight_bram.xci
+set_property used_in_implementation false [get_files -all /home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/build/project_1.srcs/sources_1/ip/weight_bram/weight_bram_ooc.xdc]
+
 read_ip -quiet /home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/build/project_1.srcs/sources_1/ip/input_bram/input_bram.xci
 set_property used_in_implementation false [get_files -all /home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/build/project_1.srcs/sources_1/ip/input_bram/input_bram_ooc.xdc]
-
-read_ip -quiet /home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/build/project_1.srcs/sources_1/ip/output_bram/output_bram.xci
-set_property used_in_implementation false [get_files -all /home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/build/project_1.srcs/sources_1/ip/output_bram/output_bram_ooc.xdc]
 
 read_ip -quiet /home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/build/project_1.srcs/sources_1/ip/PFT_partial_bram/PFT_partial_bram.xci
 set_property used_in_implementation false [get_files -all /home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/build/project_1.srcs/sources_1/ip/PFT_partial_bram/PFT_partial_bram_ooc.xdc]
@@ -122,8 +123,8 @@ set_property used_in_implementation false [get_files -all /home/ipa/junseo/tmp/k
 read_ip -quiet /home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/build/project_1.srcs/sources_1/ip/NIT_bram/NIT_bram.xci
 set_property used_in_implementation false [get_files -all /home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/build/project_1.srcs/sources_1/ip/NIT_bram/NIT_bram_ooc.xdc]
 
-read_ip -quiet /home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/build/project_1.srcs/sources_1/ip/weight_bram/weight_bram.xci
-set_property used_in_implementation false [get_files -all /home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/build/project_1.srcs/sources_1/ip/weight_bram/weight_bram_ooc.xdc]
+read_ip -quiet /home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/build/project_1.srcs/sources_1/ip/output_bram/output_bram.xci
+set_property used_in_implementation false [get_files -all /home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/build/project_1.srcs/sources_1/ip/output_bram/output_bram_ooc.xdc]
 
 OPTRACE "Adding files" END { }
 # Mark all dcp files as not used in implementation to prevent them from being
@@ -134,11 +135,14 @@ OPTRACE "Adding files" END { }
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
+read_xdc /home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/build/project_1.srcs/constrs_1/new/test.xdc
+set_property used_in_implementation false [get_files /home/ipa/junseo/tmp/khp/mesorasi/project/project_max16/build/project_1.srcs/constrs_1/new/test.xdc]
+
 set_param ips.enableIPCacheLiteLoad 1
 close [open __synthesis_is_running__ w]
 
 OPTRACE "synth_design" START { }
-synth_design -top top -part xc7a200tffg1156-3
+synth_design -top top -part xc7a200tfbg676-2
 OPTRACE "synth_design" END { }
 
 
